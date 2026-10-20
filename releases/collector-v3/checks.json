@@ -1,0 +1,2187 @@
+{
+  "frame": "duct frame: x across the cards, y along the card height (+y = card top edge / bracket tab end), z along the card axis",
+  "inlet_plane_z_mm": 337.0,
+  "fan_face_z_mm": 362.0,
+  "print_orientation": "flange (case face) on the bed; STL z = duct z - inlet_plane_z",
+  "layout": "split: one mouth and one gasket loop per card; the middle slot lies under the flange web, outside both loops",
+  "card_mouths_mm": [
+    [
+      -47.045,
+      -12.475000000000001,
+      -55.18,
+      44.6
+    ],
+    [
+      13.915,
+      48.485,
+      -55.18,
+      44.6
+    ]
+  ],
+  "gasket_loops_inner_mm": [
+    [
+      -48.58,
+      -56.71499999999999,
+      -10.940000000000001,
+      45.39999999999999
+    ],
+    [
+      12.379999999999999,
+      -56.71499999999999,
+      50.019999999999996,
+      45.39999999999999
+    ]
+  ],
+  "fan_axis_mm": [
+    0.72,
+    -9.125
+  ],
+  "derived_chassis_openings_mm": [
+    [
+      -46.545,
+      -33.295,
+      -53.18,
+      47.529999999999994
+    ],
+    [
+      -26.225,
+      -12.975000000000001,
+      -53.18,
+      47.529999999999994
+    ],
+    [
+      -5.905000000000001,
+      7.344999999999999,
+      -53.18,
+      47.529999999999994
+    ],
+    [
+      14.415,
+      27.665,
+      -53.18,
+      47.529999999999994
+    ],
+    [
+      34.735,
+      47.985,
+      -53.18,
+      47.529999999999994
+    ]
+  ],
+  "must_open_mm": [
+    [
+      -42.98,
+      -33.295,
+      -36.65,
+      44.35
+    ],
+    [
+      -26.225,
+      -17.98,
+      -36.65,
+      44.35
+    ],
+    [
+      17.98,
+      27.665,
+      -36.65,
+      44.35
+    ],
+    [
+      34.735,
+      42.98,
+      -36.65,
+      44.35
+    ]
+  ],
+  "bracket_top_y_mm": 52.349999999999994,
+  "flange_mm": {
+    "bounds": [
+      -71.29924701839144,
+      -72.17924701839145,
+      71.29924701839144,
+      49.93924701839144
+    ],
+    "thickness": 2.8,
+    "overlap_x_minus_y_plus_y": [
+      20.5,
+      17.0,
+      5.34
+    ]
+  },
+  "gasket_groove_mm": {
+    "width": 3.0,
+    "depth": 1.2,
+    "lip_sides_bottom": 1.535,
+    "lip_top": 0.8
+  },
+  "splitter_fin_mm": {
+    "x": 0.7199999999999989,
+    "thickness": 1.2,
+    "top_z": 355.6,
+    "below_fan_face": 6.399999999999999
+  },
+  "plenum_depth_mm": 25.0,
+  "wall_mm": 1.2,
+  "fan_plate_mm": [
+    120.0,
+    120.0,
+    2.4
+  ],
+  "fan_bore_diameter_mm": 116.8,
+  "fan_hole_pitch_mm": 105.0,
+  "fan_hole_diameter_mm": 3.4,
+  "fan_hub_diameter_mm": 51.0,
+  "fan_frame_below_board_plane_mm": 13.265,
+  "areas_mm2": {
+    "mouths": 6888.028587684682,
+    "fan_bore": 10714.590240627205,
+    "fan_annulus": 8671.769617630442,
+    "derived_openings_total": 6672.0375,
+    "fan_end_section": 10714.523007498397
+  },
+  "area_ratios": {
+    "fan_bore_over_mouths": 1.5555380039775315,
+    "fan_annulus_over_mouths": 1.2589624893739502
+  },
+  "steepest_air_wall_deg": 46.357860026559116,
+  "hub_shadow": {
+    "hub_radius_mm": 25.5,
+    "fin_x_mm": 0.7199999999999989,
+    "hub_covers_fin": true
+  },
+  "protrusion_mm": {
+    "collector": 25.0,
+    "fan": 25.0,
+    "total_behind_rear_panel": 50.0,
+    "note": "plus the compressed gasket (~0.5-1 mm)"
+  },
+  "mount": {
+    "mode": "magnets",
+    "points_mm": [
+      [
+        -61.285,
+        -62.99
+      ],
+      [
+        -61.285,
+        -15.29
+      ],
+      [
+        -61.285,
+        24.71
+      ],
+      [
+        61.285,
+        -62.99
+      ],
+      [
+        61.285,
+        -15.29
+      ],
+      [
+        61.285,
+        24.71
+      ]
+    ]
+  },
+  "cable_notch_bounds_mm": [
+    56.535,
+    8.71,
+    76.29924701839144,
+    16.71
+  ],
+  "physical_fit_tested": false,
+  "hardware_measured": false,
+  "CFD_status": "not run",
+  "inner": {
+    "volume_mm3": 250197.9310764986,
+    "triangles": 53214,
+    "genus": 0
+  },
+  "export_simplification_tolerance_mm": 0.01,
+  "triangles": 42938,
+  "volume_mm3": 59167.72628382216,
+  "bounds_mm": [
+    [
+      -71.29322052001953,
+      -72.17322540283203,
+      0.0
+    ],
+    [
+      71.29924774169922,
+      50.873939514160156,
+      25.0
+    ]
+  ],
+  "fit_gauge": {
+    "triangles": 13448,
+    "volume_mm3": 3145.881786334492,
+    "bounds_mm": [
+      [
+        -71.29322052001953,
+        -72.17322540283203,
+        0.0
+      ],
+      [
+        71.29924774169922,
+        50.86551284790039,
+        0.8399999737739563
+      ]
+    ],
+    "thickness_mm": 0.84,
+    "watertight": true,
+    "one_body": true
+  },
+  "stl_sha256": "178ab778f607b8909a9d06689b5d94bfd6dd2723a21e5a8da198c8bf715a457a",
+  "watertight": true,
+  "consistent_winding": true,
+  "connected_solids": 1,
+  "inner_air": {
+    "watertight": true,
+    "bodies": 1,
+    "genus": 0,
+    "volume_mm3": 250197.93107649856,
+    "triangles": 53214
+  },
+  "openings_blocked_mm2": 0.0,
+  "openings_outside_mouth_mm2": 0.0,
+  "fan_bore_blocked_mm2": 0.0,
+  "fan_holes_measured": {
+    "pitch_x_mm": 105.00019142395399,
+    "pitch_y_mm": 105.00019127602974,
+    "diameter_mm": 3.395002406346356,
+    "centres_mm": [
+      [
+        -51.78,
+        43.375
+      ],
+      [
+        53.22,
+        43.375
+      ],
+      [
+        -51.78,
+        -61.625
+      ],
+      [
+        53.22,
+        -61.625
+      ]
+    ]
+  },
+  "wall_thickness": {
+    "samples": 5709,
+    "p0_p5_p50_p95_mm": [
+      1.175,
+      1.212,
+      1.218,
+      1.232
+    ],
+    "all_skin_p50_p95_p99_mm": [
+      1.219,
+      1.263,
+      2.52
+    ],
+    "note": "plain skin: polar angle within 10 deg of x/y; the rest includes the 45 deg chamfers under the fan-plate corner ears"
+  },
+  "mesh_quality": {
+    "folded_edges_above_120deg": 81,
+    "folded_edges_visible": 38,
+    "folded_edges_above_160deg": 0,
+    "needle_faces": 52,
+    "folded_edges_visible_outside_fan_pilots": 2
+  },
+  "layer_audit": {
+    "layer_height_mm": 0.28,
+    "overhang_horizontal_allowance_mm": 0.28,
+    "maximum_beyond_45deg_area_mm2": 1379.701842010741,
+    "layers_beyond_45deg": [
+      {
+        "z": 1.2600000000000002,
+        "beyond_45deg_area_mm2": 1379.701842010741,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 3.22,
+        "beyond_45deg_area_mm2": 446.85802920484525,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 12.46,
+        "beyond_45deg_area_mm2": 0.1387816715263675,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 13.3,
+        "beyond_45deg_area_mm2": 0.10396735985150342,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 13.580000000000002,
+        "beyond_45deg_area_mm2": 0.16647386275007375,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 14.420000000000002,
+        "beyond_45deg_area_mm2": 0.1241055385653434,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 15.540000000000001,
+        "beyond_45deg_area_mm2": 0.14712700679940596,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 16.380000000000003,
+        "beyond_45deg_area_mm2": 0.11568578534378582,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 16.66,
+        "beyond_45deg_area_mm2": 0.10786307942997819,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 17.5,
+        "beyond_45deg_area_mm2": 0.13243882729155607,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 18.340000000000003,
+        "beyond_45deg_area_mm2": 0.11082990976412807,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 18.62,
+        "beyond_45deg_area_mm2": 0.15697952175339142,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 19.180000000000003,
+        "beyond_45deg_area_mm2": 0.188117538430411,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 19.46,
+        "beyond_45deg_area_mm2": 0.4557023068690893,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 19.740000000000002,
+        "beyond_45deg_area_mm2": 0.38467230177052386,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 20.3,
+        "beyond_45deg_area_mm2": 0.1546022049710625,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 20.580000000000002,
+        "beyond_45deg_area_mm2": 0.2086330308421613,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 21.14,
+        "beyond_45deg_area_mm2": 0.11004048520798432,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 21.42,
+        "beyond_45deg_area_mm2": 0.14402858462463328,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 22.26,
+        "beyond_45deg_area_mm2": 0.13079656149627875,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 22.540000000000003,
+        "beyond_45deg_area_mm2": 0.1880654807367393,
+        "floating_islands_mm2": []
+      }
+    ],
+    "floating_layers": [],
+    "note": "Geometric layer overlap screen, not a physical print test. Small bridge spans may print without supports; material, cooling and speed matter."
+  },
+  "layer_audit_without_groove_and_pocket_bridges": {
+    "maximum_beyond_45deg_area_mm2": 0.4557023068690893,
+    "layers_beyond_45deg": [
+      {
+        "z": 12.46,
+        "beyond_45deg_area_mm2": 0.1387816715263675,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 13.3,
+        "beyond_45deg_area_mm2": 0.10396735985150342,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 13.580000000000002,
+        "beyond_45deg_area_mm2": 0.16647386275007375,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 14.420000000000002,
+        "beyond_45deg_area_mm2": 0.1241055385653434,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 15.540000000000001,
+        "beyond_45deg_area_mm2": 0.14712700679940596,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 16.380000000000003,
+        "beyond_45deg_area_mm2": 0.11568578534378582,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 16.66,
+        "beyond_45deg_area_mm2": 0.10786307942997819,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 17.5,
+        "beyond_45deg_area_mm2": 0.13243882729155607,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 18.340000000000003,
+        "beyond_45deg_area_mm2": 0.11082990976412807,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 18.62,
+        "beyond_45deg_area_mm2": 0.15697952175339142,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 19.180000000000003,
+        "beyond_45deg_area_mm2": 0.188117538430411,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 19.46,
+        "beyond_45deg_area_mm2": 0.4557023068690893,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 19.740000000000002,
+        "beyond_45deg_area_mm2": 0.38467230177052386,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 20.3,
+        "beyond_45deg_area_mm2": 0.1546022049710625,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 20.580000000000002,
+        "beyond_45deg_area_mm2": 0.2086330308421613,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 21.14,
+        "beyond_45deg_area_mm2": 0.11004048520798432,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 21.42,
+        "beyond_45deg_area_mm2": 0.14402858462463328,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 22.26,
+        "beyond_45deg_area_mm2": 0.13079656149627875,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 22.540000000000003,
+        "beyond_45deg_area_mm2": 0.1880654807367393,
+        "floating_islands_mm2": []
+      }
+    ],
+    "floating_layers": []
+  },
+  "printability": {
+    "part": "collector",
+    "thresholds": {
+      "layer_h": 0.2,
+      "overhang_deg": 45.0,
+      "max_overhang_island_mm2": 0.25,
+      "cantilever_deg": 60.0,
+      "cantilever_min_mm2": 0.002,
+      "slicer_first_layer": 0.2,
+      "slicer_layer_h": 0.28,
+      "report_deg": [
+        45.0,
+        50.0,
+        55.0,
+        60.0
+      ],
+      "overhang_eps": 0.02,
+      "noise_mm2": 0.001,
+      "solid_k": 1.3333333333333333,
+      "max_solid_island_mm2": 1.0,
+      "hole_noise_mm2": 0.005,
+      "voxel": 0.5,
+      "cap_grow": 0.6,
+      "min_void_mm3": 1.0,
+      "support_max_g": 0.0,
+      "seat_eps": 0.001,
+      "max_seat_uncovered_mm2": 0.5
+    },
+    "passed": true,
+    "failed": [],
+    "gates": {
+      "unsupported_overhang": {
+        "name": "unsupported_overhang",
+        "passed": true,
+        "summary": {
+          "layer_h_mm": 0.2,
+          "slicer_stack_mm": [
+            0.2,
+            0.28
+          ],
+          "rule": "tier A (0.2 mm layers): island beyond 45 deg > 0.25 mm2; tier B (0.28 mm slicer layers): island steeper than 60 deg >= 0.002 mm2; floating islands",
+          "unsupported_volume_mm3": {
+            "45deg": 381.1404,
+            "50deg": 371.0451,
+            "55deg": 358.6286,
+            "60deg": 342.6987
+          },
+          "worst_layer_area_mm2": {
+            "45deg": 1447.3761,
+            "50deg": 1404.1173,
+            "55deg": 1350.7878,
+            "60deg": 1282.2287
+          },
+          "tier_a_failures": [],
+          "tier_b_failures": [],
+          "floating_islands": [],
+          "below_limits": [
+            {
+              "z_range": [
+                12.5,
+                12.5
+              ],
+              "bbox_xy": [
+                -49.17,
+                -55.6,
+                -49.12,
+                -55.22
+              ],
+              "centre": [
+                -49.14,
+                -55.41,
+                12.5
+              ],
+              "layers": 1,
+              "max_island_mm2": 0.0011,
+              "volume_mm3": 0.0,
+              "worst_layer": [
+                -49.15,
+                -55.42,
+                12.5
+              ],
+              "max_angle_deg": 48.2,
+              "reach_mm": 0.224
+            },
+            {
+              "z_range": [
+                12.5,
+                12.5
+              ],
+              "bbox_xy": [
+                -45.76,
+                40.72,
+                -45.38,
+                40.77
+              ],
+              "centre": [
+                -45.57,
+                40.75,
+                12.5
+              ],
+              "layers": 1,
+              "max_island_mm2": 0.001,
+              "volume_mm3": 0.0,
+              "worst_layer": [
+                -45.53,
+                40.75,
+                12.5
+              ],
+              "max_angle_deg": 48.2,
+              "reach_mm": 0.224
+            },
+            {
+              "z_range": [
+                12.5,
+                12.5
+              ],
+              "bbox_xy": [
+                46.82,
+                -59.02,
+                47.2,
+                -58.97
+              ],
+              "centre": [
+                47.01,
+                -59.0,
+                12.5
+              ],
+              "layers": 1,
+              "max_island_mm2": 0.0011,
+              "volume_mm3": 0.0,
+              "worst_layer": [
+                47.02,
+                -58.99,
+                12.5
+              ],
+              "max_angle_deg": 48.2,
+              "reach_mm": 0.224
+            },
+            {
+              "z_range": [
+                12.5,
+                12.5
+              ],
+              "bbox_xy": [
+                50.56,
+                36.97,
+                50.61,
+                37.35
+              ],
+              "centre": [
+                50.59,
+                37.16,
+                12.5
+              ],
+              "layers": 1,
+              "max_island_mm2": 0.0011,
+              "volume_mm3": 0.0,
+              "worst_layer": [
+                50.59,
+                37.17,
+                12.5
+              ],
+              "max_angle_deg": 48.2,
+              "reach_mm": 0.224
+            }
+          ],
+          "steepest_slicer_stack": [
+            {
+              "z_range": [
+                12.38,
+                12.38
+              ],
+              "bbox_xy": [
+                -49.05,
+                -56.08,
+                -48.9,
+                -55.05
+              ],
+              "centre": [
+                -48.97,
+                -55.56,
+                12.38
+              ],
+              "layers": 2,
+              "max_island_mm2": 0.0027,
+              "volume_mm3": 0.001,
+              "worst_layer": [
+                -49.04,
+                -55.22,
+                12.38
+              ],
+              "max_angle_deg": 48.4,
+              "reach_mm": 0.316
+            },
+            {
+              "z_range": [
+                12.38,
+                12.38
+              ],
+              "bbox_xy": [
+                -46.24,
+                40.5,
+                -45.2,
+                40.65
+              ],
+              "centre": [
+                -45.72,
+                40.58,
+                12.38
+              ],
+              "layers": 2,
+              "max_island_mm2": 0.0023,
+              "volume_mm3": 0.001,
+              "worst_layer": [
+                -45.41,
+                40.63,
+                12.38
+              ],
+              "max_angle_deg": 48.4,
+              "reach_mm": 0.316
+            },
+            {
+              "z_range": [
+                12.38,
+                12.38
+              ],
+              "bbox_xy": [
+                46.64,
+                -58.9,
+                47.68,
+                -58.75
+              ],
+              "centre": [
+                47.16,
+                -58.83,
+                12.38
+              ],
+              "layers": 2,
+              "max_island_mm2": 0.0027,
+              "volume_mm3": 0.001,
+              "worst_layer": [
+                46.82,
+                -58.88,
+                12.38
+              ],
+              "max_angle_deg": 48.4,
+              "reach_mm": 0.316
+            },
+            {
+              "z_range": [
+                12.38,
+                12.38
+              ],
+              "bbox_xy": [
+                50.34,
+                36.8,
+                50.49,
+                37.83
+              ],
+              "centre": [
+                50.42,
+                37.31,
+                12.38
+              ],
+              "layers": 2,
+              "max_island_mm2": 0.0027,
+              "volume_mm3": 0.001,
+              "worst_layer": [
+                50.48,
+                36.97,
+                12.38
+              ],
+              "max_angle_deg": 48.4,
+              "reach_mm": 0.316
+            },
+            {
+              "z_range": [
+                13.5,
+                13.5
+              ],
+              "bbox_xy": [
+                -50.17,
+                -56.36,
+                -50.0,
+                -55.28
+              ],
+              "centre": [
+                -50.09,
+                -55.82,
+                13.5
+              ],
+              "layers": 2,
+              "max_island_mm2": 0.0026,
+              "volume_mm3": 0.001,
+              "worst_layer": [
+                -50.15,
+                -55.46,
+                13.5
+              ],
+              "max_angle_deg": 48.1,
+              "reach_mm": 0.312
+            },
+            {
+              "z_range": [
+                13.5,
+                13.5
+              ],
+              "bbox_xy": [
+                -46.51,
+                41.6,
+                -45.44,
+                41.77
+              ],
+              "centre": [
+                -45.97,
+                41.69,
+                13.5
+              ],
+              "layers": 2,
+              "max_island_mm2": 0.0026,
+              "volume_mm3": 0.001,
+              "worst_layer": [
+                -45.62,
+                41.75,
+                13.5
+              ],
+              "max_angle_deg": 48.1,
+              "reach_mm": 0.312
+            }
+          ]
+        },
+        "failures": [],
+        "allowed": [
+          {
+            "z_range": [
+              1.3,
+              1.3
+            ],
+            "bbox_xy": [
+              -51.36,
+              -59.49,
+              -8.16,
+              48.18
+            ],
+            "centre": [
+              -29.76,
+              -5.66,
+              1.3
+            ],
+            "layers": 1,
+            "max_island_mm2": 723.6867,
+            "volume_mm3": 144.737,
+            "worst_layer": [
+              -9.45,
+              -1.73,
+              1.3
+            ],
+            "max_angle_deg": 82.4,
+            "reach_mm": 1.505,
+            "allowed_as": "gasket groove roof"
+          },
+          {
+            "z_range": [
+              1.3,
+              1.3
+            ],
+            "bbox_xy": [
+              9.6,
+              -59.49,
+              52.8,
+              48.18
+            ],
+            "centre": [
+              31.2,
+              -5.66,
+              1.3
+            ],
+            "layers": 1,
+            "max_island_mm2": 723.6895,
+            "volume_mm3": 144.738,
+            "worst_layer": [
+              10.89,
+              -1.73,
+              1.3
+            ],
+            "max_angle_deg": 82.4,
+            "reach_mm": 1.505,
+            "allowed_as": "gasket groove roof"
+          },
+          {
+            "z_range": [
+              3.3,
+              3.3
+            ],
+            "bbox_xy": [
+              -66.21,
+              -67.92,
+              -56.36,
+              -58.06
+            ],
+            "centre": [
+              -61.28,
+              -62.99,
+              3.3
+            ],
+            "layers": 1,
+            "max_island_mm2": 76.3234,
+            "volume_mm3": 15.265,
+            "worst_layer": [
+              -61.28,
+              -62.99,
+              3.3
+            ],
+            "max_angle_deg": 87.8,
+            "reach_mm": 5.15,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "z_range": [
+              3.3,
+              3.3
+            ],
+            "bbox_xy": [
+              -66.21,
+              -20.22,
+              -56.36,
+              -10.36
+            ],
+            "centre": [
+              -61.28,
+              -15.29,
+              3.3
+            ],
+            "layers": 1,
+            "max_island_mm2": 76.3234,
+            "volume_mm3": 15.265,
+            "worst_layer": [
+              -61.28,
+              -15.29,
+              3.3
+            ],
+            "max_angle_deg": 87.8,
+            "reach_mm": 5.15,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "z_range": [
+              3.3,
+              3.3
+            ],
+            "bbox_xy": [
+              -66.21,
+              19.78,
+              -56.36,
+              29.64
+            ],
+            "centre": [
+              -61.28,
+              24.71,
+              3.3
+            ],
+            "layers": 1,
+            "max_island_mm2": 76.3234,
+            "volume_mm3": 15.265,
+            "worst_layer": [
+              -61.28,
+              24.71,
+              3.3
+            ],
+            "max_angle_deg": 87.8,
+            "reach_mm": 5.15,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "z_range": [
+              3.3,
+              3.3
+            ],
+            "bbox_xy": [
+              56.36,
+              -67.92,
+              66.21,
+              -58.06
+            ],
+            "centre": [
+              61.28,
+              -62.99,
+              3.3
+            ],
+            "layers": 1,
+            "max_island_mm2": 76.3234,
+            "volume_mm3": 15.265,
+            "worst_layer": [
+              61.28,
+              -62.99,
+              3.3
+            ],
+            "max_angle_deg": 87.8,
+            "reach_mm": 5.15,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "z_range": [
+              3.3,
+              3.3
+            ],
+            "bbox_xy": [
+              56.36,
+              -20.22,
+              66.21,
+              -10.36
+            ],
+            "centre": [
+              61.28,
+              -15.29,
+              3.3
+            ],
+            "layers": 1,
+            "max_island_mm2": 76.3234,
+            "volume_mm3": 15.265,
+            "worst_layer": [
+              61.28,
+              -15.29,
+              3.3
+            ],
+            "max_angle_deg": 87.8,
+            "reach_mm": 5.15,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "z_range": [
+              3.3,
+              3.3
+            ],
+            "bbox_xy": [
+              56.36,
+              19.78,
+              66.21,
+              29.64
+            ],
+            "centre": [
+              61.28,
+              24.71,
+              3.3
+            ],
+            "layers": 1,
+            "max_island_mm2": 76.3234,
+            "volume_mm3": 15.265,
+            "worst_layer": [
+              61.28,
+              24.71,
+              3.3
+            ],
+            "max_angle_deg": 87.8,
+            "reach_mm": 5.15,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "z_range": [
+              18.9,
+              19.5
+            ],
+            "bbox_xy": [
+              -53.58,
+              43.07,
+              -52.41,
+              45.11
+            ],
+            "centre": [
+              -52.99,
+              44.09,
+              19.2
+            ],
+            "layers": 4,
+            "max_island_mm2": 0.0656,
+            "volume_mm3": 0.016,
+            "worst_layer": [
+              -53.06,
+              44.5,
+              19.5
+            ],
+            "max_angle_deg": 77.3,
+            "reach_mm": 0.888,
+            "allowed_as": "fan-screw pilot exit"
+          },
+          {
+            "z_range": [
+              18.9,
+              19.5
+            ],
+            "bbox_xy": [
+              -53.51,
+              -63.42,
+              -51.47,
+              -62.26
+            ],
+            "centre": [
+              -52.49,
+              -62.84,
+              19.2
+            ],
+            "layers": 4,
+            "max_island_mm2": 0.0656,
+            "volume_mm3": 0.016,
+            "worst_layer": [
+              -53.06,
+              -62.75,
+              19.5
+            ],
+            "max_angle_deg": 77.3,
+            "reach_mm": 0.888,
+            "allowed_as": "fan-screw pilot exit"
+          },
+          {
+            "z_range": [
+              18.9,
+              19.5
+            ],
+            "bbox_xy": [
+              52.91,
+              44.01,
+              54.95,
+              45.17
+            ],
+            "centre": [
+              53.93,
+              44.59,
+              19.2
+            ],
+            "layers": 4,
+            "max_island_mm2": 0.0656,
+            "volume_mm3": 0.016,
+            "worst_layer": [
+              54.5,
+              44.5,
+              19.5
+            ],
+            "max_angle_deg": 77.3,
+            "reach_mm": 0.888,
+            "allowed_as": "fan-screw pilot exit"
+          },
+          {
+            "z_range": [
+              18.9,
+              19.5
+            ],
+            "bbox_xy": [
+              53.85,
+              -63.36,
+              55.02,
+              -61.32
+            ],
+            "centre": [
+              54.44,
+              -62.34,
+              19.2
+            ],
+            "layers": 4,
+            "max_island_mm2": 0.0656,
+            "volume_mm3": 0.016,
+            "worst_layer": [
+              54.5,
+              -62.75,
+              19.5
+            ],
+            "max_angle_deg": 77.3,
+            "reach_mm": 0.888,
+            "allowed_as": "fan-screw pilot exit"
+          },
+          {
+            "z_range": [
+              19.1,
+              19.3
+            ],
+            "bbox_xy": [
+              -53.58,
+              -62.06,
+              -53.42,
+              -61.57
+            ],
+            "centre": [
+              -53.5,
+              -61.81,
+              19.2
+            ],
+            "layers": 2,
+            "max_island_mm2": 0.0093,
+            "volume_mm3": 0.003,
+            "worst_layer": [
+              -53.45,
+              -62.01,
+              19.3
+            ],
+            "max_angle_deg": 62.7,
+            "reach_mm": 0.388,
+            "allowed_as": "fan-screw pilot exit"
+          },
+          {
+            "z_range": [
+              19.1,
+              19.3
+            ],
+            "bbox_xy": [
+              -52.21,
+              45.02,
+              -51.72,
+              45.17
+            ],
+            "centre": [
+              -51.97,
+              45.09,
+              19.2
+            ],
+            "layers": 2,
+            "max_island_mm2": 0.0093,
+            "volume_mm3": 0.003,
+            "worst_layer": [
+              -52.09,
+              45.09,
+              19.3
+            ],
+            "max_angle_deg": 62.7,
+            "reach_mm": 0.388,
+            "allowed_as": "fan-screw pilot exit"
+          },
+          {
+            "z_range": [
+              19.1,
+              19.3
+            ],
+            "bbox_xy": [
+              53.16,
+              -63.42,
+              53.65,
+              -63.27
+            ],
+            "centre": [
+              53.41,
+              -63.34,
+              19.2
+            ],
+            "layers": 2,
+            "max_island_mm2": 0.0093,
+            "volume_mm3": 0.003,
+            "worst_layer": [
+              53.53,
+              -63.34,
+              19.3
+            ],
+            "max_angle_deg": 62.7,
+            "reach_mm": 0.388,
+            "allowed_as": "fan-screw pilot exit"
+          },
+          {
+            "z_range": [
+              19.1,
+              19.3
+            ],
+            "bbox_xy": [
+              54.86,
+              43.32,
+              55.02,
+              43.81
+            ],
+            "centre": [
+              54.94,
+              43.56,
+              19.2
+            ],
+            "layers": 2,
+            "max_island_mm2": 0.0093,
+            "volume_mm3": 0.003,
+            "worst_layer": [
+              54.89,
+              43.76,
+              19.3
+            ],
+            "max_angle_deg": 62.7,
+            "reach_mm": 0.388,
+            "allowed_as": "fan-screw pilot exit"
+          },
+          {
+            "z_range": [
+              1.46,
+              1.46
+            ],
+            "bbox_xy": [
+              -51.28,
+              -59.41,
+              -8.24,
+              48.1
+            ],
+            "centre": [
+              -29.76,
+              -5.65,
+              1.46
+            ],
+            "layers": 1,
+            "max_island_mm2": 678.567,
+            "volume_mm3": 189.999,
+            "worst_layer": [
+              -9.45,
+              -4.88,
+              1.46
+            ],
+            "max_angle_deg": 79.5,
+            "reach_mm": 1.507,
+            "allowed_as": "gasket groove roof"
+          },
+          {
+            "z_range": [
+              1.46,
+              1.46
+            ],
+            "bbox_xy": [
+              9.68,
+              -59.41,
+              52.72,
+              48.1
+            ],
+            "centre": [
+              31.2,
+              -5.65,
+              1.46
+            ],
+            "layers": 1,
+            "max_island_mm2": 678.5698,
+            "volume_mm3": 190.0,
+            "worst_layer": [
+              10.89,
+              -4.88,
+              1.46
+            ],
+            "max_angle_deg": 79.5,
+            "reach_mm": 1.507,
+            "allowed_as": "gasket groove roof"
+          },
+          {
+            "z_range": [
+              3.42,
+              3.42
+            ],
+            "bbox_xy": [
+              -66.13,
+              -67.84,
+              -56.44,
+              -58.14
+            ],
+            "centre": [
+              -61.28,
+              -62.99,
+              3.42
+            ],
+            "layers": 1,
+            "max_island_mm2": 73.8657,
+            "volume_mm3": 20.682,
+            "worst_layer": [
+              -61.28,
+              -62.87,
+              3.42
+            ],
+            "max_angle_deg": 86.9,
+            "reach_mm": 5.152,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "z_range": [
+              3.42,
+              3.42
+            ],
+            "bbox_xy": [
+              -66.13,
+              -20.14,
+              -56.44,
+              -10.44
+            ],
+            "centre": [
+              -61.28,
+              -15.29,
+              3.42
+            ],
+            "layers": 1,
+            "max_island_mm2": 73.8657,
+            "volume_mm3": 20.682,
+            "worst_layer": [
+              -61.28,
+              -15.41,
+              3.42
+            ],
+            "max_angle_deg": 86.9,
+            "reach_mm": 5.152,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "z_range": [
+              3.42,
+              3.42
+            ],
+            "bbox_xy": [
+              -66.13,
+              19.86,
+              -56.44,
+              29.56
+            ],
+            "centre": [
+              -61.28,
+              24.71,
+              3.42
+            ],
+            "layers": 1,
+            "max_island_mm2": 73.8657,
+            "volume_mm3": 20.682,
+            "worst_layer": [
+              -61.28,
+              24.83,
+              3.42
+            ],
+            "max_angle_deg": 86.9,
+            "reach_mm": 5.152,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "z_range": [
+              3.42,
+              3.42
+            ],
+            "bbox_xy": [
+              56.44,
+              -67.84,
+              66.13,
+              -58.14
+            ],
+            "centre": [
+              61.28,
+              -62.99,
+              3.42
+            ],
+            "layers": 1,
+            "max_island_mm2": 73.8657,
+            "volume_mm3": 20.682,
+            "worst_layer": [
+              61.28,
+              -62.87,
+              3.42
+            ],
+            "max_angle_deg": 86.9,
+            "reach_mm": 5.152,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "z_range": [
+              3.42,
+              3.42
+            ],
+            "bbox_xy": [
+              56.44,
+              -20.14,
+              66.13,
+              -10.44
+            ],
+            "centre": [
+              61.28,
+              -15.29,
+              3.42
+            ],
+            "layers": 1,
+            "max_island_mm2": 73.8657,
+            "volume_mm3": 20.682,
+            "worst_layer": [
+              61.28,
+              -15.41,
+              3.42
+            ],
+            "max_angle_deg": 86.9,
+            "reach_mm": 5.152,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "z_range": [
+              3.42,
+              3.42
+            ],
+            "bbox_xy": [
+              56.44,
+              19.86,
+              66.13,
+              29.56
+            ],
+            "centre": [
+              61.28,
+              24.71,
+              3.42
+            ],
+            "layers": 1,
+            "max_island_mm2": 73.8657,
+            "volume_mm3": 20.682,
+            "worst_layer": [
+              61.28,
+              24.83,
+              3.42
+            ],
+            "max_angle_deg": 86.9,
+            "reach_mm": 5.152,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "z_range": [
+              19.38,
+              19.66
+            ],
+            "bbox_xy": [
+              -53.63,
+              -63.48,
+              -52.09,
+              -61.93
+            ],
+            "centre": [
+              -52.86,
+              -62.7,
+              19.52
+            ],
+            "layers": 3,
+            "max_island_mm2": 0.1647,
+            "volume_mm3": 0.059,
+            "worst_layer": [
+              -52.98,
+              -62.93,
+              19.66
+            ],
+            "max_angle_deg": 69.2,
+            "reach_mm": 0.737,
+            "allowed_as": "fan-screw pilot exit"
+          },
+          {
+            "z_range": [
+              19.38,
+              19.66
+            ],
+            "bbox_xy": [
+              -53.63,
+              43.69,
+              -52.09,
+              45.23
+            ],
+            "centre": [
+              -52.86,
+              44.46,
+              19.52
+            ],
+            "layers": 3,
+            "max_island_mm2": 0.1647,
+            "volume_mm3": 0.059,
+            "worst_layer": [
+              -52.98,
+              44.68,
+              19.66
+            ],
+            "max_angle_deg": 69.2,
+            "reach_mm": 0.737,
+            "allowed_as": "fan-screw pilot exit"
+          },
+          {
+            "z_range": [
+              19.38,
+              19.66
+            ],
+            "bbox_xy": [
+              53.53,
+              -63.48,
+              55.07,
+              -61.94
+            ],
+            "centre": [
+              54.3,
+              -62.71,
+              19.52
+            ],
+            "layers": 3,
+            "max_island_mm2": 0.1647,
+            "volume_mm3": 0.059,
+            "worst_layer": [
+              54.42,
+              -62.94,
+              19.66
+            ],
+            "max_angle_deg": 69.2,
+            "reach_mm": 0.737,
+            "allowed_as": "fan-screw pilot exit"
+          },
+          {
+            "z_range": [
+              19.38,
+              19.66
+            ],
+            "bbox_xy": [
+              53.53,
+              43.68,
+              55.07,
+              45.23
+            ],
+            "centre": [
+              54.3,
+              44.45,
+              19.52
+            ],
+            "layers": 3,
+            "max_island_mm2": 0.1647,
+            "volume_mm3": 0.059,
+            "worst_layer": [
+              54.42,
+              44.69,
+              19.66
+            ],
+            "max_angle_deg": 69.2,
+            "reach_mm": 0.737,
+            "allowed_as": "fan-screw pilot exit"
+          }
+        ]
+      },
+      "solid_regions": {
+        "name": "solid_regions",
+        "passed": true,
+        "summary": {
+          "layer_h_mm": 0.2,
+          "wall_mm": 1.2,
+          "ball_diameter_mm": 1.6,
+          "island_limit_mm2": 1.0,
+          "unexplained_solid_volume_mm3": 0.0,
+          "allowed_solid_volume_mm3": {
+            "flange": 20460.21,
+            "flange fillet": 505.82,
+            "fan-plate ear chamfer blocks": 14150.94,
+            "fan plate": 7573.11
+          },
+          "features": [],
+          "below_limit": []
+        },
+        "failures": [],
+        "allowed": [
+          {
+            "z_range": [
+              0.3,
+              2.7
+            ],
+            "bbox_xy": [
+              -71.29,
+              -72.17,
+              71.3,
+              49.93
+            ],
+            "centre": [
+              0.0,
+              -11.12,
+              1.5
+            ],
+            "layers": 13,
+            "max_island_mm2": 9290.577,
+            "volume_mm3": 20460.21,
+            "worst_layer": [
+              0.72,
+              -11.13,
+              1.9
+            ],
+            "allowed_as": "flange"
+          },
+          {
+            "z_range": [
+              2.9,
+              3.7
+            ],
+            "bbox_xy": [
+              -49.23,
+              -57.36,
+              50.67,
+              46.77
+            ],
+            "centre": [
+              0.72,
+              -5.29,
+              3.3
+            ],
+            "layers": 5,
+            "max_island_mm2": 929.9794,
+            "volume_mm3": 505.822,
+            "worst_layer": [
+              -48.13,
+              -4.18,
+              2.9
+            ],
+            "allowed_as": "flange fillet"
+          },
+          {
+            "z_range": [
+              10.9,
+              22.5
+            ],
+            "bbox_xy": [
+              -59.14,
+              -68.99,
+              60.58,
+              50.74
+            ],
+            "centre": [
+              0.72,
+              -9.12,
+              16.7
+            ],
+            "layers": 59,
+            "max_island_mm2": 3406.1105,
+            "volume_mm3": 14150.943,
+            "worst_layer": [
+              55.62,
+              -39.38,
+              22.5
+            ],
+            "allowed_as": "fan-plate ear chamfer blocks"
+          },
+          {
+            "z_range": [
+              22.7,
+              24.7
+            ],
+            "bbox_xy": [
+              -59.27,
+              -69.12,
+              60.71,
+              50.87
+            ],
+            "centre": [
+              0.72,
+              -9.13,
+              23.7
+            ],
+            "layers": 11,
+            "max_island_mm2": 3477.9367,
+            "volume_mm3": 7573.112,
+            "worst_layer": [
+              -58.47,
+              -9.11,
+              23.5
+            ],
+            "allowed_as": "fan plate"
+          }
+        ]
+      },
+      "seal": {
+        "name": "seal",
+        "passed": true,
+        "summary": {
+          "a_undesigned_voids": [],
+          "a_designed_void_layers": {
+            "plenum": 139,
+            "gasket groove": 12,
+            "magnet pocket": 96,
+            "fan-screw pilot": 112
+          },
+          "b_voxels": {
+            "voxel_mm": 0.5,
+            "caps": [
+              {
+                "z": -0.25,
+                "area_mm2": 7204.7
+              },
+              {
+                "z": 25.25,
+                "area_mm2": 10934.0
+              }
+            ],
+            "passage_components": 1,
+            "leaks": [],
+            "enclosed_voids": []
+          }
+        },
+        "failures": [],
+        "allowed": []
+      },
+      "seat_coverage": {
+        "name": "seat_coverage",
+        "passed": true,
+        "summary": {
+          "limit_mm2": 0.5,
+          "seats": []
+        },
+        "failures": [],
+        "allowed": []
+      },
+      "slicer_support": {
+        "name": "slicer_support",
+        "passed": true,
+        "summary": {
+          "profile": "profiles/slicer/process-028.json",
+          "gcode": "runs/slice-collector-v3/plate_1.gcode",
+          "slice": null,
+          "gate_g": 0.0,
+          "unexplained_support_g": 0,
+          "allowed_support_g": 1.6699,
+          "support_filament_mm": 546.65,
+          "support_g": 1.67,
+          "interface_g": 0.871,
+          "plate_offset_xy": [
+            127.997,
+            136.65
+          ],
+          "islands": []
+        },
+        "failures": [],
+        "allowed": [
+          {
+            "grams": 0.3375,
+            "z_range": [
+              0.2,
+              1.04
+            ],
+            "top_contact_bbox_xy": [
+              10.2,
+              -59.1,
+              52.2,
+              47.6
+            ],
+            "bbox_xy": [
+              10.1,
+              -59.1,
+              52.2,
+              47.8
+            ],
+            "interface_g": 0.3375,
+            "allowed_as": "gasket groove roof"
+          },
+          {
+            "grams": 0.3367,
+            "z_range": [
+              0.2,
+              1.04
+            ],
+            "top_contact_bbox_xy": [
+              -50.8,
+              -59.1,
+              -8.7,
+              47.6
+            ],
+            "bbox_xy": [
+              -50.8,
+              -59.1,
+              -8.6,
+              47.6
+            ],
+            "interface_g": 0.3367,
+            "allowed_as": "gasket groove roof"
+          },
+          {
+            "grams": 0.1221,
+            "z_range": [
+              0.2,
+              19.52
+            ],
+            "top_contact_bbox_xy": [
+              55.0,
+              -63.7,
+              55.2,
+              -63.0
+            ],
+            "bbox_xy": [
+              49.6,
+              -81.3,
+              59.7,
+              -62.1
+            ],
+            "interface_g": 0.0,
+            "allowed_as": "fan-screw pilot exit"
+          },
+          {
+            "grams": 0.122,
+            "z_range": [
+              0.2,
+              19.52
+            ],
+            "top_contact_bbox_xy": [
+              -53.7,
+              -63.7,
+              -53.4,
+              -63.2
+            ],
+            "bbox_xy": [
+              -58.4,
+              -81.3,
+              -48.4,
+              -62.1
+            ],
+            "interface_g": 0.0,
+            "allowed_as": "fan-screw pilot exit"
+          },
+          {
+            "grams": 0.1008,
+            "z_range": [
+              0.2,
+              19.52
+            ],
+            "top_contact_bbox_xy": [
+              54.5,
+              44.9,
+              55.0,
+              45.5
+            ],
+            "bbox_xy": [
+              50.1,
+              43.8,
+              59.5,
+              57.5
+            ],
+            "interface_g": 0.0,
+            "allowed_as": "fan-screw pilot exit"
+          },
+          {
+            "grams": 0.0991,
+            "z_range": [
+              0.2,
+              19.52
+            ],
+            "top_contact_bbox_xy": [
+              -53.5,
+              44.9,
+              -53.4,
+              44.9
+            ],
+            "bbox_xy": [
+              -58.0,
+              43.8,
+              -48.7,
+              57.4
+            ],
+            "interface_g": 0.0,
+            "allowed_as": "fan-screw pilot exit"
+          },
+          {
+            "grams": 0.0931,
+            "z_range": [
+              0.2,
+              3.0
+            ],
+            "top_contact_bbox_xy": [
+              56.9,
+              20.4,
+              65.6,
+              29.1
+            ],
+            "bbox_xy": [
+              56.9,
+              20.0,
+              66.0,
+              29.1
+            ],
+            "interface_g": 0.0332,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "grams": 0.093,
+            "z_range": [
+              0.2,
+              3.0
+            ],
+            "top_contact_bbox_xy": [
+              56.9,
+              -19.6,
+              65.6,
+              -10.9
+            ],
+            "bbox_xy": [
+              56.9,
+              -20.0,
+              65.9,
+              -10.8
+            ],
+            "interface_g": 0.0319,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "grams": 0.0927,
+            "z_range": [
+              0.2,
+              3.0
+            ],
+            "top_contact_bbox_xy": [
+              -65.6,
+              20.4,
+              -56.9,
+              29.1
+            ],
+            "bbox_xy": [
+              -65.6,
+              20.0,
+              -56.7,
+              29.1
+            ],
+            "interface_g": 0.0331,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "grams": 0.0923,
+            "z_range": [
+              0.2,
+              3.0
+            ],
+            "top_contact_bbox_xy": [
+              56.9,
+              -67.3,
+              65.6,
+              -58.6
+            ],
+            "bbox_xy": [
+              56.9,
+              -67.7,
+              65.9,
+              -58.6
+            ],
+            "interface_g": 0.0333,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "grams": 0.0903,
+            "z_range": [
+              0.2,
+              3.0
+            ],
+            "top_contact_bbox_xy": [
+              -65.6,
+              -67.3,
+              -56.9,
+              -58.6
+            ],
+            "bbox_xy": [
+              -65.6,
+              -67.7,
+              -56.7,
+              -58.5
+            ],
+            "interface_g": 0.0325,
+            "allowed_as": "magnet pocket ceiling"
+          },
+          {
+            "grams": 0.0903,
+            "z_range": [
+              0.2,
+              3.0
+            ],
+            "top_contact_bbox_xy": [
+              -65.6,
+              -19.6,
+              -57.0,
+              -10.8
+            ],
+            "bbox_xy": [
+              -65.6,
+              -20.0,
+              -56.6,
+              -10.8
+            ],
+            "interface_g": 0.0332,
+            "allowed_as": "magnet pocket ceiling"
+          }
+        ]
+      }
+    },
+    "allowlist": [
+      {
+        "gate": "unsupported_overhang",
+        "name": "gasket groove roof",
+        "lo": [
+          -200.0,
+          -200.0,
+          1.0
+        ],
+        "hi": [
+          200.0,
+          200.0,
+          1.6
+        ],
+        "max_deg": 90.0,
+        "why": "3.0 mm bridge over the foam groove on the case face"
+      },
+      {
+        "gate": "unsupported_overhang",
+        "name": "fan-screw pilot exit",
+        "lo": [
+          -200.0,
+          -200.0,
+          0
+        ],
+        "hi": [
+          200.0,
+          200.0,
+          25.0
+        ],
+        "max_deg": 90.0,
+        "why": "the 3.4 mm pilot leaves the 45 deg ear chamfer: a crescent bridging the hole"
+      },
+      {
+        "gate": "unsupported_overhang",
+        "name": "magnet pocket ceiling",
+        "lo": [
+          -200.0,
+          -200.0,
+          3.0
+        ],
+        "hi": [
+          200.0,
+          200.0,
+          3.6
+        ],
+        "max_deg": 90.0,
+        "why": "10.3 mm bridge over each magnet pocket"
+      },
+      {
+        "gate": "solid_regions",
+        "name": "flange",
+        "lo": [
+          -200.0,
+          -200.0,
+          -1
+        ],
+        "hi": [
+          200.0,
+          200.0,
+          2.8
+        ],
+        "max_deg": 90.0,
+        "why": "2.8 mm flange on the rear panel"
+      },
+      {
+        "gate": "solid_regions",
+        "name": "flange fillet",
+        "lo": [
+          -200.0,
+          -200.0,
+          2.8
+        ],
+        "hi": [
+          200.0,
+          200.0,
+          4.3
+        ],
+        "max_deg": 90.0,
+        "why": "1.5 mm concave fillet between flange and body"
+      },
+      {
+        "gate": "solid_regions",
+        "name": "fan plate",
+        "lo": [
+          -200.0,
+          -200.0,
+          22.6
+        ],
+        "hi": [
+          200.0,
+          200.0,
+          26.0
+        ],
+        "max_deg": 90.0,
+        "why": "2.4 mm fan plate under the 105 mm screw pattern"
+      },
+      {
+        "gate": "solid_regions",
+        "name": "fan-plate ear chamfer blocks",
+        "lo": [
+          -200.0,
+          -200.0,
+          -2.3999999999999986
+        ],
+        "hi": [
+          200.0,
+          200.0,
+          22.6
+        ],
+        "max_deg": 90.0,
+        "why": "the plate corners outside the round bore rest on 45 deg chamfered blocks that the fan screws thread into (3.4 mm pilots); at >= 16 mm wide the slicer fills them with sparse infill, not solid"
+      }
+    ]
+  }
+}

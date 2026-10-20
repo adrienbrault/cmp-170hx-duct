@@ -1,0 +1,33 @@
+[project]
+name = "duct"
+version = "0.1.0"
+description = "Parametric dual CMP 170HX fan duct: CAD, print checks, OpenFOAM CFD and visualization"
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = [
+    "numpy==2.5.4",
+    "scipy==1.18.1",
+    "trimesh==5.1.1",
+    "manifold3d==3.5.4",
+    "shapely==2.2.0",
+    "networkx==3.7",
+]
+
+[project.optional-dependencies]
+viz = ["pyvista", "vtk", "imageio", "imageio-ffmpeg"]
+
+[project.scripts]
+duct = "duct.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-xdist>=3.8.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

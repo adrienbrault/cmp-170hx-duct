@@ -1,0 +1,25 @@
+FoamFile {version 2.0; format ascii; class dictionary; object controlDict;}
+application porousSimpleFoam;
+startFrom latestTime; startTime 0; stopAt endTime; endTime 1600; deltaT 1;
+writeControl timeStep; writeInterval 200; purgeWrite 3; writeFormat ascii;
+writePrecision 9; writeCompression off; timeFormat general; timePrecision 6;
+runTimeModifiable true;
+functions
+{
+ inletAverage {type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name inlet; operation areaAverage; fields (p U); writeFields false; log true; writeControl timeStep; writeInterval 20;}
+ outletLeftAverage {type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name outletLeft; operation areaAverage; fields (p U); writeFields false; log true; writeControl timeStep; writeInterval 20;}
+ outletRightAverage {type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name outletRight; operation areaAverage; fields (p U); writeFields false; log true; writeControl timeStep; writeInterval 20;}
+ inletFlow {type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name inlet; operation sum; fields (phi); log true; writeFields false; writeControl timeStep; writeInterval 20;}
+ leftFlow {type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name outletLeft; operation sum; fields (phi); log true; writeFields false; writeControl timeStep; writeInterval 20;}
+ rightFlow {type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name outletRight; operation sum; fields (phi); log true; writeFields false; writeControl timeStep; writeInterval 20;}
+ profiles
+ {
+ type surfaces; libs (sampling); writeControl timeStep; writeInterval 1600;
+ surfaceFormat vtk; fields (p U); interpolationScheme cellPoint;
+ surfaces
+ {
+  inletPlane {type cuttingPlane; planeType pointAndNormal; pointAndNormalDict {point (0 0 $inletPlaneZ); normal (0 0 1);} interpolate false;}
+  portPlane {type cuttingPlane; planeType pointAndNormal; pointAndNormalDict {point (0 0 $portPlaneZ); normal (0 0 1);} interpolate false;}
+ }
+ }
+}

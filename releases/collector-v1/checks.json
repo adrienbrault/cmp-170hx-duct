@@ -1,0 +1,526 @@
+{
+  "frame": "duct frame: x across the cards, y along the card height (+y = card top edge / bracket tab end), z along the card axis",
+  "inlet_plane_z_mm": 337.0,
+  "fan_face_z_mm": 362.0,
+  "print_orientation": "flange (case face) on the bed; STL z = duct z - inlet_plane_z",
+  "window_mm": {
+    "x": [
+      -50.8,
+      50.8
+    ],
+    "y": [
+      -53.68,
+      48.029999999999994
+    ],
+    "corner_radius": 2.5
+  },
+  "fan_axis_mm": [
+    0.0,
+    -2.825000000000003
+  ],
+  "derived_chassis_openings_mm": [
+    [
+      -46.545,
+      -33.295,
+      -53.18,
+      47.529999999999994
+    ],
+    [
+      -26.225,
+      -12.975000000000001,
+      -53.18,
+      47.529999999999994
+    ],
+    [
+      -5.905000000000001,
+      7.344999999999999,
+      -53.18,
+      47.529999999999994
+    ],
+    [
+      14.415,
+      27.665,
+      -53.18,
+      47.529999999999994
+    ],
+    [
+      34.735,
+      47.985,
+      -53.18,
+      47.529999999999994
+    ]
+  ],
+  "bracket_top_y_mm": 52.349999999999994,
+  "flange_mm": {
+    "bounds": [
+      -71.29924701839144,
+      -69.67924701839145,
+      71.29924701839144,
+      57.029247018391445
+    ],
+    "thickness": 2.8,
+    "overlap_x_minus_y_plus_y": [
+      20.5,
+      16.0,
+      9.0
+    ]
+  },
+  "gasket_groove_mm": {
+    "width": 6.4,
+    "depth": 1.2,
+    "inner_offset_from_window": 1.2
+  },
+  "plenum_depth_mm": 25.0,
+  "wall_mm": 1.2,
+  "fan_plate_mm": [
+    120.0,
+    120.0,
+    2.4
+  ],
+  "fan_bore_diameter_mm": 116.8,
+  "fan_hole_pitch_mm": 105.0,
+  "fan_hole_diameter_mm": 3.4,
+  "fan_hub_diameter_mm": 51.0,
+  "areas_mm2": {
+    "mouth": 10328.370954084936,
+    "fan_bore": 10714.590240627205,
+    "fan_annulus": 8671.769617630442,
+    "derived_openings_total": 6672.0375,
+    "fan_end_section": 10714.590240627203
+  },
+  "area_ratios": {
+    "fan_bore_over_mouth": 1.0373940177264371,
+    "fan_annulus_over_mouth": 0.839606715926552,
+    "fan_annulus_over_openings": 1.2997183570431732
+  },
+  "steepest_air_wall_deg": {
+    "mid_side_x": 32.232683883641094,
+    "mid_side_y": 32.04522841297961,
+    "corner_diagonal": 45.91687754223157
+  },
+  "hub_shadow": {
+    "hub_radius_mm": 25.5,
+    "middle_opening_x_mm": [
+      -5.905000000000001,
+      7.344999999999999
+    ],
+    "hub_covers_middle_opening_width": true
+  },
+  "protrusion_mm": {
+    "collector": 25.0,
+    "fan": 25.0,
+    "total_behind_rear_panel": 50.0,
+    "note": "plus the compressed gasket (~0.5-1 mm)"
+  },
+  "mount": {
+    "mode": "magnets",
+    "points_mm": [
+      [
+        -64.35,
+        -60.525000000000006
+      ],
+      [
+        -64.35,
+        -12.825000000000003
+      ],
+      [
+        -64.35,
+        27.174999999999997
+      ],
+      [
+        64.35,
+        -60.525000000000006
+      ],
+      [
+        64.35,
+        -12.825000000000003
+      ],
+      [
+        64.35,
+        27.174999999999997
+      ]
+    ]
+  },
+  "cable_notch_bounds_mm": [
+    59.6,
+    11.174999999999997,
+    76.29924701839144,
+    19.174999999999997
+  ],
+  "inner": {
+    "volume_mm3": 269504.1816869269,
+    "triangles": 43008,
+    "genus": 0
+  },
+  "physical_fit_tested": false,
+  "hardware_measured": false,
+  "CFD_status": "not run",
+  "export_simplification_tolerance_mm": 0.01,
+  "triangles": 45448,
+  "volume_mm3": 50257.82724678123,
+  "bounds_mm": [
+    [
+      -71.29322052001953,
+      -69.67322540283203,
+      0.0
+    ],
+    [
+      71.29924774169922,
+      57.16708755493164,
+      25.0
+    ]
+  ],
+  "fit_gauge": {
+    "triangles": 11400,
+    "volume_mm3": 2451.183975124063,
+    "bounds_mm": [
+      [
+        -71.29322052001953,
+        -69.67322540283203,
+        0.0
+      ],
+      [
+        71.29924774169922,
+        63.02924728393555,
+        0.8399999737739563
+      ]
+    ],
+    "thickness_mm": 0.84,
+    "watertight": true,
+    "one_body": true
+  },
+  "stl_sha256": "b88e643415fb700d612c0e35e4db9489b477b4a45693245dfaae094b0d5a84c2",
+  "watertight": true,
+  "consistent_winding": true,
+  "connected_solids": 1,
+  "inner_air": {
+    "watertight": true,
+    "bodies": 1,
+    "genus": 0,
+    "volume_mm3": 269504.181686927,
+    "triangles": 43008
+  },
+  "openings_blocked_mm2": 0.0,
+  "openings_outside_mouth_mm2": 0.0,
+  "fan_bore_blocked_mm2": 0.0,
+  "fan_holes_measured": {
+    "pitch_x_mm": 105.0001913286284,
+    "pitch_y_mm": 105.00019135326684,
+    "diameter_mm": 3.395002811198043,
+    "centres_mm": [
+      [
+        -52.5,
+        49.675
+      ],
+      [
+        52.5,
+        49.675
+      ],
+      [
+        -52.5,
+        -55.325
+      ],
+      [
+        52.5,
+        -55.325
+      ]
+    ]
+  },
+  "wall_thickness": {
+    "samples": 6352,
+    "p0_p5_p50_p95_mm": [
+      1.201,
+      1.207,
+      1.214,
+      1.224
+    ],
+    "all_skin_p50_p95_p99_mm": [
+      1.215,
+      2.178,
+      3.106
+    ],
+    "note": "plain skin: polar angle within 10 deg of x/y; the rest includes the 45 deg chamfers under the fan-plate corner ears"
+  },
+  "mesh_quality": {
+    "folded_edges_above_120deg": 72,
+    "folded_edges_visible": 36,
+    "folded_edges_above_160deg": 0,
+    "needle_faces": 39,
+    "folded_edges_visible_outside_fan_pilots": 0
+  },
+  "layer_audit": {
+    "layer_height_mm": 0.28,
+    "overhang_horizontal_allowance_mm": 0.28,
+    "maximum_beyond_45deg_area_mm2": 2512.4426637551405,
+    "layers_beyond_45deg": [
+      {
+        "z": 1.2600000000000002,
+        "beyond_45deg_area_mm2": 2512.4426637551405,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 3.22,
+        "beyond_45deg_area_mm2": 446.8580427908227,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 10.500000000000002,
+        "beyond_45deg_area_mm2": 0.1087360296469117,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 10.780000000000001,
+        "beyond_45deg_area_mm2": 0.11276266429035435,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 11.06,
+        "beyond_45deg_area_mm2": 0.14124835947116593,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 11.340000000000002,
+        "beyond_45deg_area_mm2": 0.23822214750868634,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 11.620000000000001,
+        "beyond_45deg_area_mm2": 0.29444862028788565,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 11.9,
+        "beyond_45deg_area_mm2": 0.1491157696029445,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 12.180000000000001,
+        "beyond_45deg_area_mm2": 0.1516400968559739,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 12.46,
+        "beyond_45deg_area_mm2": 0.20008179721933164,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 13.3,
+        "beyond_45deg_area_mm2": 0.11197109082789863,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 13.580000000000002,
+        "beyond_45deg_area_mm2": 0.17540184059475955,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 14.420000000000002,
+        "beyond_45deg_area_mm2": 0.1425466056314027,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 15.540000000000001,
+        "beyond_45deg_area_mm2": 0.15053123240657063,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 16.380000000000003,
+        "beyond_45deg_area_mm2": 0.12104049892684685,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 16.66,
+        "beyond_45deg_area_mm2": 0.11301898661468697,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 17.5,
+        "beyond_45deg_area_mm2": 0.13469181038712608,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 18.340000000000003,
+        "beyond_45deg_area_mm2": 0.10927594563927649,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 18.62,
+        "beyond_45deg_area_mm2": 0.15312926974870628,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 19.180000000000003,
+        "beyond_45deg_area_mm2": 0.17937267922682834,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 19.46,
+        "beyond_45deg_area_mm2": 0.44148592200585995,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 19.740000000000002,
+        "beyond_45deg_area_mm2": 0.3619052595274239,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 20.3,
+        "beyond_45deg_area_mm2": 0.10943082670579653,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 20.580000000000002,
+        "beyond_45deg_area_mm2": 0.1612752566894548,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 21.42,
+        "beyond_45deg_area_mm2": 0.13842360262118192,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 22.26,
+        "beyond_45deg_area_mm2": 0.13915159343069214,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 22.540000000000003,
+        "beyond_45deg_area_mm2": 0.20387288029013897,
+        "floating_islands_mm2": []
+      }
+    ],
+    "floating_layers": [],
+    "note": "Geometric layer overlap screen, not a physical print test. Small bridge spans may print without supports; material, cooling and speed matter."
+  },
+  "layer_audit_without_groove_and_pocket_bridges": {
+    "maximum_beyond_45deg_area_mm2": 0.44148592200585995,
+    "layers_beyond_45deg": [
+      {
+        "z": 10.500000000000002,
+        "beyond_45deg_area_mm2": 0.1087360296469117,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 10.780000000000001,
+        "beyond_45deg_area_mm2": 0.11276266429035435,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 11.06,
+        "beyond_45deg_area_mm2": 0.14124835947116593,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 11.340000000000002,
+        "beyond_45deg_area_mm2": 0.23822214750868634,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 11.620000000000001,
+        "beyond_45deg_area_mm2": 0.29444862028788565,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 11.9,
+        "beyond_45deg_area_mm2": 0.1491157696029445,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 12.180000000000001,
+        "beyond_45deg_area_mm2": 0.1516400968559739,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 12.46,
+        "beyond_45deg_area_mm2": 0.20008179721933164,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 13.3,
+        "beyond_45deg_area_mm2": 0.11197109082789863,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 13.580000000000002,
+        "beyond_45deg_area_mm2": 0.17540184059475955,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 14.420000000000002,
+        "beyond_45deg_area_mm2": 0.1425466056314027,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 15.540000000000001,
+        "beyond_45deg_area_mm2": 0.15053123240657063,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 16.380000000000003,
+        "beyond_45deg_area_mm2": 0.12104049892684685,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 16.66,
+        "beyond_45deg_area_mm2": 0.11301898661468697,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 17.5,
+        "beyond_45deg_area_mm2": 0.13469181038712608,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 18.340000000000003,
+        "beyond_45deg_area_mm2": 0.10927594563927649,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 18.62,
+        "beyond_45deg_area_mm2": 0.15312926974870628,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 19.180000000000003,
+        "beyond_45deg_area_mm2": 0.17937267922682834,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 19.46,
+        "beyond_45deg_area_mm2": 0.44148592200585995,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 19.740000000000002,
+        "beyond_45deg_area_mm2": 0.3619052595274239,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 20.3,
+        "beyond_45deg_area_mm2": 0.10943082670579653,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 20.580000000000002,
+        "beyond_45deg_area_mm2": 0.1612752566894548,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 21.42,
+        "beyond_45deg_area_mm2": 0.13842360262118192,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 22.26,
+        "beyond_45deg_area_mm2": 0.13915159343069214,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 22.540000000000003,
+        "beyond_45deg_area_mm2": 0.20387288029013897,
+        "floating_islands_mm2": []
+      }
+    ],
+    "floating_layers": []
+  }
+}

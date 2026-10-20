@@ -1,0 +1,14 @@
+{
+  "automatic_supports": {
+    "minutes": 195.86302083333334,
+    "grams": 99.76207733154297,
+    "triangle_count": 64842,
+    "warning": ""
+  },
+  "no_supports_trial": {
+    "minutes": 195.63271484375,
+    "grams": 99.72735595703125,
+    "triangle_count": 64842,
+    "warning": ""
+  }
+}

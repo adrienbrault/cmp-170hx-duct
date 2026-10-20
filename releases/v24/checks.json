@@ -1,0 +1,384 @@
+{
+  "export_simplification_tolerance_mm": 0.01,
+  "watertight": true,
+  "one_connected_solid": true,
+  "volume_mm3": 81434.28228418402,
+  "bounds_mm": [
+    [
+      -60.0,
+      -60.0,
+      0.0
+    ],
+    [
+      60.0,
+      60.0,
+      82.0
+    ]
+  ],
+  "fan_plate_mm": [
+    120.0,
+    120.0,
+    2.4
+  ],
+  "inlet_diameter_mm": 116.8,
+  "collar_wall_mm": 1.6,
+  "shell_wall_mm": 1.6,
+  "wall_method": "Uniform 1.6 mm shell: the 3-D dilation of the rounded air volume, so every inside fillet is followed outside; connector-service trims locally reduce thickness",
+  "GPU_opening_mm": [
+    38.5,
+    98.5
+  ],
+  "plug_latch_sweep_collisions_mm3": [
+    0.0,
+    0.0
+  ],
+  "connector_bay_collisions_mm3": [
+    -1.4210854715202004e-14,
+    9.325873406851315e-15
+  ],
+  "integral_return_top_depth_mm": 3.2,
+  "return_underside_ramp_start_mm": 62.0,
+  "connector_access": "Open outer/top rims; lower and inner returns retained",
+  "housing_clearance_mm": [
+    13.6,
+    20.6
+  ],
+  "local_latch_aperture_mm": [
+    3.6,
+    8.6
+  ],
+  "physical_fit_tested": false,
+  "CFD_validation": "Separate study; CAD export does not certify performance",
+  "chamber_length_mm": 70.0,
+  "transition_end_mm": 70.0,
+  "shoulder_rounding_max_mm": 10.0,
+  "shoulder_rounding_at_service_end_mm": 7.0,
+  "passage_wall_fillet_max_mm": 8.0,
+  "passage_wall_fillet_at_GPU_mm": 6.0,
+  "connector_service_policy": "Contoured pocket around explicit straight plug/latch insertion sweep; oversized rectangular service trim removed",
+  "shoulder_axial_easing_fraction": 0.06,
+  "pocket_transition_end_mm": 44.0,
+  "splitter_nose_front_width_mm": 0.4,
+  "splitter_nose_radii_mm": [
+    0.8,
+    1.6
+  ],
+  "splitter_profile": "symmetric cubic widening with elliptical nose",
+  "shoulder_axial_max_slope": 0.8099613152804642,
+  "upper_shoulder_requested_radius_mm": 6.0,
+  "shape": "every convex air-section corner rounded (>= 6.0 mm, tapering to the seat); upper and lower bay fillets followed by the outer skin; 3.5 mm flange fillet; flush collars with rounded notch ends; rounded return outline and splitter groove",
+  "fan_front_to_GPU_face_mm": 95.0,
+  "section_rounding_mm": 6.0,
+  "flange_fillet_mm": 3.5,
+  "splitter_groove_radius_mm": 0.15,
+  "return_outline_radius_mm": 0.8,
+  "internal_air_volume_mm3": 583782.6903533897,
+  "serialized_fillet_checks": [
+    {
+      "z_mm": 44.0,
+      "side": 0,
+      "actual_STL_curve_error_mm": 0.003026962439549287
+    },
+    {
+      "z_mm": 44.0,
+      "side": 1,
+      "actual_STL_curve_error_mm": 0.007784161691572583
+    },
+    {
+      "z_mm": 50.0,
+      "side": 0,
+      "actual_STL_curve_error_mm": 0.005654079791712287
+    },
+    {
+      "z_mm": 50.0,
+      "side": 1,
+      "actual_STL_curve_error_mm": 0.0063167173749706755
+    },
+    {
+      "z_mm": 60.0,
+      "side": 0,
+      "actual_STL_curve_error_mm": 0.013394699043517944
+    },
+    {
+      "z_mm": 60.0,
+      "side": 1,
+      "actual_STL_curve_error_mm": 0.007034808607507176
+    },
+    {
+      "z_mm": 69.99,
+      "side": 0,
+      "actual_STL_curve_error_mm": 0.015225127432138635
+    },
+    {
+      "z_mm": 69.99,
+      "side": 1,
+      "actual_STL_curve_error_mm": 0.006621140425629927
+    }
+  ],
+  "consistent_winding": true,
+  "connected_solids": 1,
+  "fan_face_uncovered_area_mm2": 0.0023799796040908316,
+  "splitter_profile_measurements": [
+    {
+      "z_mm": 0.0001,
+      "expected_half_width_mm": 0.20019354932787356,
+      "measured_x_bounds_mm": [
+        -0.20016063004732132,
+        0.20016081631183624
+      ],
+      "error_mm": 3.291928055224047e-05
+    },
+    {
+      "z_mm": 0.14,
+      "expected_half_width_mm": 0.3789963877828959,
+      "measured_x_bounds_mm": [
+        -0.3784906268119812,
+        0.37913168995573443
+      ],
+      "error_mm": 0.0005057609709147037
+    },
+    {
+      "z_mm": 0.28,
+      "expected_half_width_mm": 0.48762050896123765,
+      "measured_x_bounds_mm": [
+        -0.48641605278631694,
+        0.4852521839563253
+      ],
+      "error_mm": 0.0023683250049123528
+    },
+    {
+      "z_mm": 0.5,
+      "expected_half_width_mm": 0.6055742026952523,
+      "measured_x_bounds_mm": [
+        -0.6030470654368401,
+        0.6020390319692944
+      ],
+      "error_mm": 0.0035351707259578813
+    },
+    {
+      "z_mm": 1.0,
+      "expected_half_width_mm": 0.7577213773503793,
+      "measured_x_bounds_mm": [
+        -0.7563803070587715,
+        0.7553465771294346
+      ],
+      "error_mm": 0.002374800220944606
+    },
+    {
+      "z_mm": 1.5,
+      "expected_half_width_mm": 0.8137843900520142,
+      "measured_x_bounds_mm": [
+        -0.8080459237098694,
+        0.810057415343013
+      ],
+      "error_mm": 0.00573846634214481
+    },
+    {
+      "z_mm": 2.0,
+      "expected_half_width_mm": 0.8250563265306123,
+      "measured_x_bounds_mm": [
+        -0.8240596627672315,
+        0.8236245672110379
+      ],
+      "error_mm": 0.0014317593195743994
+    },
+    {
+      "z_mm": 5.0,
+      "expected_half_width_mm": 0.9520408163265306,
+      "measured_x_bounds_mm": [
+        -0.9545263145998748,
+        0.9534774991854458
+      ],
+      "error_mm": 0.002485498273344211
+    },
+    {
+      "z_mm": 10.0,
+      "expected_half_width_mm": 1.3777551020408163,
+      "measured_x_bounds_mm": [
+        -1.3781232833862305,
+        1.3786230204725285
+      ],
+      "error_mm": 0.0008679184317121891
+    },
+    {
+      "z_mm": 20.0,
+      "expected_half_width_mm": 2.8677551020408165,
+      "measured_x_bounds_mm": [
+        -2.869679994881153,
+        2.868651662259354
+      ],
+      "error_mm": 0.0019248928403365895
+    },
+    {
+      "z_mm": 30.0,
+      "expected_half_width_mm": 4.905102040816326,
+      "measured_x_bounds_mm": [
+        -4.906836181879044,
+        4.905260665240828
+      ],
+      "error_mm": 0.0017341410627178533
+    },
+    {
+      "z_mm": 40.0,
+      "expected_half_width_mm": 7.124897959183673,
+      "measured_x_bounds_mm": [
+        -7.121637453189546,
+        7.126059554218302
+      ],
+      "error_mm": 0.003260505994126639
+    },
+    {
+      "z_mm": 50.0,
+      "expected_half_width_mm": 9.162244897959184,
+      "measured_x_bounds_mm": [
+        -9.159872770309448,
+        9.16137335771981
+      ],
+      "error_mm": 0.0023721276497354893
+    },
+    {
+      "z_mm": 54.99,
+      "expected_half_width_mm": 9.996963818836328,
+      "measured_x_bounds_mm": [
+        -9.994018615252635,
+        10.000785687722924
+      ],
+      "error_mm": 0.0038218688865967465
+    },
+    {
+      "z_mm": 60.0,
+      "expected_half_width_mm": 10.652244897959184,
+      "measured_x_bounds_mm": [
+        -10.65218834578991,
+        10.65418141911765
+      ],
+      "error_mm": 0.00193652115846632
+    },
+    {
+      "z_mm": 69.99,
+      "expected_half_width_mm": 11.229999361489387,
+      "measured_x_bounds_mm": [
+        -11.230480173036286,
+        11.235026181427935
+      ],
+      "error_mm": 0.005026819938548144
+    }
+  ],
+  "collar_section_difference_from_cad_mm": 0.007600069889719758,
+  "stl_sha256": "3e3bce2c6cb76d122d700cf4d5262ef254f584e0804182a12cf41a7f4363bef5",
+  "total_estimated_port_obstruction_mm2": 149.36702633694256,
+  "passage_fillet_min_radius_service_region_mm": 6.009873940702722,
+  "layer_audit": {
+    "layer_height_mm": 0.28,
+    "overhang_horizontal_allowance_mm": 0.28,
+    "maximum_beyond_45deg_area_mm2": 2.530204432414206,
+    "layers_beyond_45deg": [
+      {
+        "z": 64.26,
+        "beyond_45deg_area_mm2": 0.48179905881655727,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 64.54,
+        "beyond_45deg_area_mm2": 2.530204432414206,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 64.82000000000001,
+        "beyond_45deg_area_mm2": 1.7902732652425044,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 65.10000000000001,
+        "beyond_45deg_area_mm2": 1.6963456854013759,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 65.38000000000001,
+        "beyond_45deg_area_mm2": 1.4973558155632203,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 65.66000000000001,
+        "beyond_45deg_area_mm2": 1.4042008428829,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 65.94000000000001,
+        "beyond_45deg_area_mm2": 1.1964823488218383,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 66.22000000000001,
+        "beyond_45deg_area_mm2": 1.1260524482926733,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 66.5,
+        "beyond_45deg_area_mm2": 0.6279126142361928,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 66.78,
+        "beyond_45deg_area_mm2": 0.5409222079213246,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 67.06,
+        "beyond_45deg_area_mm2": 0.17167787141975455,
+        "floating_islands_mm2": []
+      }
+    ],
+    "floating_layers": [],
+    "note": "Geometric layer overlap screen, not a physical print test. Small bridge spans may print without supports; material, cooling and speed matter."
+  },
+  "mesh_quality": {
+    "folded_edges_above_120deg": 8,
+    "folded_edges_visible": 0,
+    "folded_edges_above_160deg": 2,
+    "needle_faces": 29
+  },
+  "normal_audit": [
+    {
+      "min_triangle_area_mm2": [
+        0,
+        0.0001
+      ],
+      "adjacent_edges": 31,
+      "edges_above_35deg": 10
+    },
+    {
+      "min_triangle_area_mm2": [
+        0.0001,
+        0.001
+      ],
+      "adjacent_edges": 131,
+      "edges_above_35deg": 4
+    },
+    {
+      "min_triangle_area_mm2": [
+        0.001,
+        0.01
+      ],
+      "adjacent_edges": 3264,
+      "edges_above_35deg": 89
+    },
+    {
+      "min_triangle_area_mm2": [
+        0.01,
+        0.1
+      ],
+      "adjacent_edges": 52520,
+      "edges_above_35deg": 79
+    },
+    {
+      "min_triangle_area_mm2": [
+        0.1,
+        1000
+      ],
+      "adjacent_edges": 22565,
+      "edges_above_35deg": 59
+    }
+  ],
+  "CFD_status": "Controlled 0/3/6/9 mm upper-shoulder radius screening is running; no optimality claim."
+}

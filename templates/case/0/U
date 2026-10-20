@@ -1,0 +1,10 @@
+FoamFile {version 2.0; format ascii; class volVectorField; object U;}
+dimensions [0 1 -1 0 0 0 0]; internalField uniform $U0;
+boundaryField
+{
+ inlet {type pressureInletOutletVelocity; value uniform $U0;}
+ $outletPatch {type pressureInletOutletVelocity; value uniform $U0;}
+ walls {type noSlip;}
+ cardWalls {type slip;}
+ background {type noSlip;}
+}

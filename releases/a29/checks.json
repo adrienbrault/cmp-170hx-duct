@@ -1,0 +1,923 @@
+{
+  "export_simplification_tolerance_mm": 0.0025,
+  "watertight": true,
+  "one_connected_solid": true,
+  "volume_mm3": 55319.00828754715,
+  "bounds_mm": [
+    [
+      -60.0,
+      -60.0,
+      0.0
+    ],
+    [
+      60.0,
+      60.0,
+      74.0
+    ]
+  ],
+  "fan_plate_mm": [
+    120.0,
+    120.0,
+    2.4
+  ],
+  "inlet_diameter_mm": 116.8,
+  "collar_wall_mm": 1.2,
+  "shell_wall_mm": 1.2,
+  "wall_method": "Uniform 1.2 mm shell: the 3-D dilation of the rounded air volume, so every inside fillet is followed outside; connector-service trims locally reduce thickness",
+  "GPU_opening_mm": [
+    38.5,
+    98.5
+  ],
+  "plug_latch_sweep_collisions_mm3": [
+    0.0,
+    0.0
+  ],
+  "connector_bay_collisions_mm3": [
+    1.3869856599270789e-08,
+    9.22490390016273e-09
+  ],
+  "integral_return_top_depth_mm": 3.2,
+  "return_underside_ramp_start_mm": 54.0,
+  "connector_access": "Open outer/top rims; lower and inner returns retained",
+  "housing_clearance_mm": [
+    13.6,
+    20.6
+  ],
+  "local_latch_aperture_mm": [
+    2.2,
+    7.2
+  ],
+  "physical_fit_tested": false,
+  "CFD_validation": "Separate study; CAD export does not certify performance",
+  "chamber_length_mm": 62.0,
+  "transition_end_mm": 62.0,
+  "shoulder_rounding_max_mm": 10.0,
+  "shoulder_rounding_at_service_end_mm": 7.0,
+  "passage_wall_fillet_max_mm": 8.0,
+  "passage_wall_fillet_at_GPU_mm": 6.0,
+  "connector_service_policy": "Contoured pocket around explicit straight plug/latch insertion sweep; oversized rectangular service trim removed",
+  "shoulder_axial_easing_fraction": 0.06,
+  "pocket_transition_end_mm": 36.0,
+  "splitter_nose_front_width_mm": 0.4,
+  "splitter_nose_radii_mm": [
+    0.8,
+    1.6
+  ],
+  "splitter_profile": "symmetric cubic widening with elliptical nose",
+  "shoulder_axial_max_slope": 0.989952718676123,
+  "upper_shoulder_requested_radius_mm": 6.0,
+  "shape": "every convex air-section corner rounded (>= 6.0 mm, tapering to the seat); upper and lower bay fillets followed by the outer skin; 3.5 mm flange fillet; flush collars with rounded notch ends; rounded return outline and splitter groove",
+  "fan_front_to_GPU_face_mm": 87.0,
+  "section_rounding_mm": 6.0,
+  "flange_fillet_mm": 3.5,
+  "splitter_groove_radius_mm": 0.15,
+  "return_outline_radius_mm": 0.8,
+  "internal_air_volume_mm3": 512760.3504873485,
+  "serialized_fillet_checks": [
+    {
+      "z_mm": 36.0,
+      "side": 0,
+      "actual_STL_curve_error_mm": 0.0010808271750763702
+    },
+    {
+      "z_mm": 36.0,
+      "side": 1,
+      "actual_STL_curve_error_mm": 0.00022573256280586013
+    },
+    {
+      "z_mm": 42.0,
+      "side": 0,
+      "actual_STL_curve_error_mm": 0.0004094963528361034
+    },
+    {
+      "z_mm": 42.0,
+      "side": 1,
+      "actual_STL_curve_error_mm": 0.00018335481486039804
+    },
+    {
+      "z_mm": 52.0,
+      "side": 0,
+      "actual_STL_curve_error_mm": 0.0008672086422952241
+    },
+    {
+      "z_mm": 52.0,
+      "side": 1,
+      "actual_STL_curve_error_mm": 0.00046290552575708387
+    },
+    {
+      "z_mm": 61.99,
+      "side": 0,
+      "actual_STL_curve_error_mm": 0.001187568732076698
+    },
+    {
+      "z_mm": 61.99,
+      "side": 1,
+      "actual_STL_curve_error_mm": 0.0021708842037076233
+    }
+  ],
+  "consistent_winding": true,
+  "connected_solids": 1,
+  "fan_face_uncovered_area_mm2": 1.1342838916448674e-06,
+  "splitter_profile_measurements": [
+    {
+      "z_mm": 0.0001,
+      "expected_half_width_mm": 0.20019354926612365,
+      "measured_x_bounds_mm": [
+        -0.20016027987003326,
+        0.2001604661345482
+      ],
+      "error_mm": 3.326939609038515e-05
+    },
+    {
+      "z_mm": 0.14,
+      "expected_half_width_mm": 0.3788755185184227,
+      "measured_x_bounds_mm": [
+        -0.37876657396554947,
+        0.37885535556721095
+      ],
+      "error_mm": 0.00010894455287324689
+    },
+    {
+      "z_mm": 0.28,
+      "expected_half_width_mm": 0.4871376745540892,
+      "measured_x_bounds_mm": [
+        -0.48711156100034714,
+        0.48718975219438837
+      ],
+      "error_mm": 5.207764029918627e-05
+    },
+    {
+      "z_mm": 0.5,
+      "expected_half_width_mm": 0.6040377724420393,
+      "measured_x_bounds_mm": [
+        -0.6038084082155151,
+        0.602926351252596
+      ],
+      "error_mm": 0.0011114211894432957
+    },
+    {
+      "z_mm": 1.0,
+      "expected_half_width_mm": 0.7516049316083081,
+      "measured_x_bounds_mm": [
+        -0.7516085803508759,
+        0.7515284679977161
+      ],
+      "error_mm": 7.646361059199247e-05
+    },
+    {
+      "z_mm": 1.5,
+      "expected_half_width_mm": 0.8000882564916114,
+      "measured_x_bounds_mm": [
+        -0.7993123158812523,
+        0.8000132659689473
+      ],
+      "error_mm": 0.0007759406103591271
+    },
+    {
+      "z_mm": 2.0,
+      "expected_half_width_mm": 0.8008247457285758,
+      "measured_x_bounds_mm": [
+        -0.8001741245388985,
+        0.8004328671931048
+      ],
+      "error_mm": 0.0006506211896772918
+    },
+    {
+      "z_mm": 5.0,
+      "expected_half_width_mm": 0.8049847269309524,
+      "measured_x_bounds_mm": [
+        -0.8053185540266374,
+        0.8056494629232389
+      ],
+      "error_mm": 0.0006647359922865581
+    },
+    {
+      "z_mm": 10.0,
+      "expected_half_width_mm": 0.8188060152395019,
+      "measured_x_bounds_mm": [
+        -0.8208838444184248,
+        0.8206976779240029
+      ],
+      "error_mm": 0.002077829178922852
+    },
+    {
+      "z_mm": 20.0,
+      "expected_half_width_mm": 0.8661609210835488,
+      "measured_x_bounds_mm": [
+        -0.8673624127786655,
+        0.8672466310767716
+      ],
+      "error_mm": 0.001201491695116741
+    },
+    {
+      "z_mm": 30.0,
+      "expected_half_width_mm": 0.9284700077204526,
+      "measured_x_bounds_mm": [
+        -0.9291089628224255,
+        0.9293035308345503
+      ],
+      "error_mm": 0.0008335231140976784
+    },
+    {
+      "z_mm": 40.0,
+      "expected_half_width_mm": 0.9921385653385253,
+      "measured_x_bounds_mm": [
+        -0.9922752504148517,
+        0.9926945722071604
+      ],
+      "error_mm": 0.0005560068686351061
+    },
+    {
+      "z_mm": 50.0,
+      "expected_half_width_mm": 1.0435718841260786,
+      "measured_x_bounds_mm": [
+        -1.0438401833420363,
+        1.0440593899779556
+      ],
+      "error_mm": 0.00048750585187695705
+    },
+    {
+      "z_mm": 54.99,
+      "expected_half_width_mm": 1.0604257960144845,
+      "measured_x_bounds_mm": [
+        -1.060915123214584,
+        1.060721541962647
+      ],
+      "error_mm": 0.0004893272000994209
+    },
+    {
+      "z_mm": 60.0,
+      "expected_half_width_mm": 1.0691752542714246,
+      "measured_x_bounds_mm": [
+        -1.0692806185297228,
+        1.069712921573582
+      ],
+      "error_mm": 0.0005376673021575407
+    },
+    {
+      "z_mm": 61.99,
+      "expected_half_width_mm": 1.069999978930466,
+      "measured_x_bounds_mm": [
+        -1.0704791704362164,
+        1.0709550008177757
+      ],
+      "error_mm": 0.0009550218873097815
+    }
+  ],
+  "collar_section_difference_from_cad_mm": 0.0016275239316716832,
+  "stl_sha256": "966287af6d7eb41409fa2166e852e2b5e26868da350a5b45541ab6ef240e00d4",
+  "total_estimated_port_obstruction_mm2": 149.36702985802418,
+  "passage_fillet_min_radius_service_region_mm": 6.009830352136602,
+  "layer_audit": {
+    "layer_height_mm": 0.28,
+    "overhang_horizontal_allowance_mm": 0.28,
+    "maximum_beyond_45deg_area_mm2": 0.0867065341632582,
+    "layers_beyond_45deg": [],
+    "floating_layers": [],
+    "note": "Geometric layer overlap screen, not a physical print test. Small bridge spans may print without supports; material, cooling and speed matter."
+  },
+  "mesh_quality": {
+    "folded_edges_above_120deg": 12,
+    "folded_edges_visible": 0,
+    "folded_edges_above_160deg": 2,
+    "needle_faces": 130
+  },
+  "normal_audit": [
+    {
+      "min_triangle_area_mm2": [
+        0,
+        0.0001
+      ],
+      "adjacent_edges": 257,
+      "edges_above_35deg": 24
+    },
+    {
+      "min_triangle_area_mm2": [
+        0.0001,
+        0.001
+      ],
+      "adjacent_edges": 1942,
+      "edges_above_35deg": 36
+    },
+    {
+      "min_triangle_area_mm2": [
+        0.001,
+        0.01
+      ],
+      "adjacent_edges": 16152,
+      "edges_above_35deg": 88
+    },
+    {
+      "min_triangle_area_mm2": [
+        0.01,
+        0.1
+      ],
+      "adjacent_edges": 126227,
+      "edges_above_35deg": 365
+    },
+    {
+      "min_triangle_area_mm2": [
+        0.1,
+        1000
+      ],
+      "adjacent_edges": 13114,
+      "edges_above_35deg": 14
+    }
+  ],
+  "CFD_status": "Controlled 0/3/6/9 mm upper-shoulder radius screening is running; no optimality claim.",
+  "printability": {
+    "part": "duct",
+    "thresholds": {
+      "layer_h": 0.2,
+      "overhang_deg": 45.0,
+      "max_overhang_island_mm2": 0.25,
+      "cantilever_deg": 60.0,
+      "cantilever_min_mm2": 0.002,
+      "slicer_first_layer": 0.2,
+      "slicer_layer_h": 0.28,
+      "report_deg": [
+        45.0,
+        50.0,
+        55.0,
+        60.0
+      ],
+      "overhang_eps": 0.02,
+      "noise_mm2": 0.001,
+      "solid_k": 1.3333333333333333,
+      "max_solid_island_mm2": 1.0,
+      "hole_noise_mm2": 0.005,
+      "voxel": 0.5,
+      "cap_grow": 0.6,
+      "min_void_mm3": 1.0,
+      "support_max_g": 0.0,
+      "seat_eps": 0.001,
+      "max_seat_uncovered_mm2": 0.5,
+      "max_seat_open_mm2": 24.0
+    },
+    "passed": true,
+    "failed": [],
+    "gates": {
+      "unsupported_overhang": {
+        "name": "unsupported_overhang",
+        "passed": true,
+        "summary": {
+          "layer_h_mm": 0.2,
+          "slicer_stack_mm": [
+            0.2,
+            0.28
+          ],
+          "rule": "tier A (0.2 mm layers): island beyond 45 deg > 0.25 mm2; tier B (0.28 mm slicer layers): island steeper than 60 deg >= 0.002 mm2; floating islands",
+          "unsupported_volume_mm3": {
+            "45deg": 0.003,
+            "50deg": 0.0,
+            "55deg": 0.0,
+            "60deg": 0.0
+          },
+          "worst_layer_area_mm2": {
+            "45deg": 0.0019,
+            "50deg": 0.0,
+            "55deg": 0.0,
+            "60deg": 0.0
+          },
+          "tier_a_failures": [],
+          "tier_b_failures": [],
+          "floating_islands": [],
+          "below_limits": [
+            {
+              "z_range": [
+                61.7,
+                61.7
+              ],
+              "bbox_xy": [
+                -40.79,
+                27.13,
+                -40.72,
+                27.2
+              ],
+              "centre": [
+                -40.75,
+                27.16,
+                61.7
+              ],
+              "layers": 1,
+              "max_island_mm2": 0.0019,
+              "volume_mm3": 0.0,
+              "worst_layer": [
+                -40.77,
+                27.16,
+                61.7
+              ],
+              "max_angle_deg": 52.7,
+              "reach_mm": 0.263
+            }
+          ],
+          "steepest_slicer_stack": [
+            {
+              "z_range": [
+                59.14,
+                61.66
+              ],
+              "bbox_xy": [
+                -40.79,
+                24.95,
+                -38.54,
+                27.2
+              ],
+              "centre": [
+                -39.66,
+                26.07,
+                60.4
+              ],
+              "layers": 10,
+              "max_island_mm2": 0.0133,
+              "volume_mm3": 0.007,
+              "worst_layer": [
+                -40.76,
+                27.09,
+                61.66
+              ],
+              "max_angle_deg": 55.6,
+              "reach_mm": 0.409
+            },
+            {
+              "z_range": [
+                60.82,
+                61.38
+              ],
+              "bbox_xy": [
+                -23.28,
+                49.65,
+                -22.76,
+                50.18
+              ],
+              "centre": [
+                -23.02,
+                49.91,
+                61.1
+              ],
+              "layers": 3,
+              "max_island_mm2": 0.0014,
+              "volume_mm3": 0.001,
+              "worst_layer": [
+                -23.28,
+                50.14,
+                61.38
+              ],
+              "max_angle_deg": 50.4,
+              "reach_mm": 0.339
+            },
+            {
+              "z_range": [
+                60.82,
+                61.38
+              ],
+              "bbox_xy": [
+                17.36,
+                49.65,
+                17.88,
+                50.18
+              ],
+              "centre": [
+                17.62,
+                49.91,
+                61.1
+              ],
+              "layers": 3,
+              "max_island_mm2": 0.0014,
+              "volume_mm3": 0.001,
+              "worst_layer": [
+                17.36,
+                50.14,
+                61.38
+              ],
+              "max_angle_deg": 50.4,
+              "reach_mm": 0.339
+            }
+          ]
+        },
+        "failures": [],
+        "allowed": []
+      },
+      "solid_regions": {
+        "name": "solid_regions",
+        "passed": true,
+        "summary": {
+          "layer_h_mm": 0.2,
+          "wall_mm": 1.2,
+          "ball_diameter_mm": 1.6,
+          "island_limit_mm2": 1.0,
+          "unexplained_solid_volume_mm3": 0.0,
+          "allowed_solid_volume_mm3": {
+            "fan plate": 8688.79,
+            "flange fillet": 805.06,
+            "shared collar wall between adjacent cards": 11220.36,
+            "seat seal beside the latch wall": 382.38,
+            "seat corner fill": 30.44
+          },
+          "features": [],
+          "below_limit": []
+        },
+        "failures": [],
+        "allowed": [
+          {
+            "z_range": [
+              0.3,
+              3.5
+            ],
+            "bbox_xy": [
+              -60.0,
+              -60.0,
+              60.0,
+              60.0
+            ],
+            "centre": [
+              0.0,
+              0.0,
+              1.9
+            ],
+            "layers": 17,
+            "max_island_mm2": 3790.3664,
+            "volume_mm3": 8688.793,
+            "worst_layer": [
+              -59.15,
+              -0.0,
+              1.7
+            ],
+            "allowed_as": "fan plate"
+          },
+          {
+            "z_range": [
+              3.7,
+              5.9
+            ],
+            "bbox_xy": [
+              -57.0,
+              -59.37,
+              56.99,
+              57.67
+            ],
+            "centre": [
+              -0.0,
+              -0.85,
+              4.8
+            ],
+            "layers": 12,
+            "max_island_mm2": 644.7233,
+            "volume_mm3": 805.063,
+            "worst_layer": [
+              46.38,
+              -36.69,
+              3.7
+            ],
+            "allowed_as": "flange fillet"
+          },
+          {
+            "z_range": [
+              6.1,
+              73.7
+            ],
+            "bbox_xy": [
+              -1.25,
+              -59.03,
+              1.87,
+              55.29
+            ],
+            "centre": [
+              0.31,
+              -1.87,
+              39.9
+            ],
+            "layers": 339,
+            "max_island_mm2": 184.6417,
+            "volume_mm3": 11220.364,
+            "worst_layer": [
+              0.0,
+              -7.31,
+              6.1
+            ],
+            "allowed_as": "shared collar wall between adjacent cards"
+          },
+          {
+            "z_range": [
+              58.1,
+              61.7
+            ],
+            "bbox_xy": [
+              -25.51,
+              26.6,
+              -21.83,
+              48.7
+            ],
+            "centre": [
+              -23.67,
+              37.65,
+              59.9
+            ],
+            "layers": 19,
+            "max_island_mm2": 67.3591,
+            "volume_mm3": 191.188,
+            "worst_layer": [
+              -23.32,
+              37.95,
+              61.1
+            ],
+            "allowed_as": "seat seal beside the latch wall"
+          },
+          {
+            "z_range": [
+              58.1,
+              61.7
+            ],
+            "bbox_xy": [
+              15.13,
+              26.6,
+              18.81,
+              48.7
+            ],
+            "centre": [
+              16.97,
+              37.65,
+              59.9
+            ],
+            "layers": 19,
+            "max_island_mm2": 67.3557,
+            "volume_mm3": 191.195,
+            "worst_layer": [
+              17.32,
+              36.0,
+              61.1
+            ],
+            "allowed_as": "seat seal beside the latch wall"
+          },
+          {
+            "z_range": [
+              58.9,
+              61.7
+            ],
+            "bbox_xy": [
+              -40.02,
+              21.89,
+              -33.66,
+              26.44
+            ],
+            "centre": [
+              -36.84,
+              24.16,
+              60.3
+            ],
+            "layers": 15,
+            "max_island_mm2": 17.5568,
+            "volume_mm3": 30.436,
+            "worst_layer": [
+              -38.22,
+              24.18,
+              61.1
+            ],
+            "allowed_as": "seat corner fill"
+          }
+        ]
+      },
+      "seal": {
+        "name": "seal",
+        "passed": true,
+        "summary": {
+          "a_undesigned_voids": [],
+          "a_designed_void_layers": {
+            "branch passage": 620,
+            "fan screw hole": 48
+          },
+          "b_voxels": {
+            "voxel_mm": 0.5,
+            "caps": [
+              {
+                "z": -0.25,
+                "area_mm2": 10931.2
+              },
+              {
+                "z": 62.25,
+                "area_mm2": 7064.3
+              }
+            ],
+            "passage_components": 2,
+            "leaks": [],
+            "enclosed_voids": []
+          }
+        },
+        "failures": [],
+        "allowed": []
+      },
+      "seat_coverage": {
+        "name": "seat_coverage",
+        "passed": true,
+        "summary": {
+          "limit_mm2": 0.5,
+          "open_limit_mm2": 24.0,
+          "seats": [
+            {
+              "seat": "card A seat",
+              "z": 61.999,
+              "region_mm2": 3649.8,
+              "uncovered_mm2": 0.0,
+              "open_mm2": 21.48,
+              "allowed_openings": [
+                {
+                  "name": "plug housing clearance",
+                  "why": "the power plug enters here along its insertion sweep: housing + 0.3 mm"
+                },
+                {
+                  "name": "latch clearance",
+                  "why": "the plug's latch lever and its release swing, along the same sweep, + 0.3 mm"
+                }
+              ],
+              "covers": [
+                {
+                  "name": "connector housing",
+                  "why": "the card's power-connector housing covers the card face under it"
+                }
+              ],
+              "patches": []
+            },
+            {
+              "seat": "card B seat",
+              "z": 61.999,
+              "region_mm2": 3649.8,
+              "uncovered_mm2": 0.0,
+              "open_mm2": 21.48,
+              "allowed_openings": [
+                {
+                  "name": "plug housing clearance",
+                  "why": "the power plug enters here along its insertion sweep: housing + 0.3 mm"
+                },
+                {
+                  "name": "latch clearance",
+                  "why": "the plug's latch lever and its release swing, along the same sweep, + 0.3 mm"
+                }
+              ],
+              "covers": [
+                {
+                  "name": "connector housing",
+                  "why": "the card's power-connector housing covers the card face under it"
+                }
+              ],
+              "patches": []
+            }
+          ]
+        },
+        "failures": [],
+        "allowed": []
+      },
+      "slicer_support": {
+        "name": "slicer_support",
+        "passed": true,
+        "summary": {
+          "profile": "profiles/slicer/process-028.json",
+          "gcode": "runs/slice-a29/plate_1.gcode",
+          "slice": null,
+          "gate_g": 0.0,
+          "unexplained_support_g": 0,
+          "allowed_support_g": 0,
+          "support_filament_mm": 0.0,
+          "support_g": 0.0,
+          "interface_g": 0.0,
+          "plate_offset_xy": [
+            128.0,
+            126.0
+          ],
+          "islands": []
+        },
+        "failures": [],
+        "allowed": []
+      }
+    },
+    "allowlist": [
+      {
+        "gate": "solid_regions",
+        "name": "fan plate",
+        "lo": [
+          -61.0,
+          -61.0,
+          -1
+        ],
+        "hi": [
+          61.0,
+          61.0,
+          3.5999999999999996
+        ],
+        "max_deg": 90.0,
+        "why": "2.4 mm plate under the 105 mm screw pattern: solid by design; the ball also fits in the L-junction of each wall with the plate, up to about one wall above it"
+      },
+      {
+        "gate": "solid_regions",
+        "name": "flange fillet",
+        "lo": [
+          -61.0,
+          -61.0,
+          2.4
+        ],
+        "hi": [
+          61.0,
+          61.0,
+          5.9
+        ],
+        "max_deg": 90.0,
+        "why": "3.5 mm concave fillet between plate and body: a solid quarter-round"
+      },
+      {
+        "gate": "solid_regions",
+        "name": "splitter web",
+        "lo": [
+          -3,
+          -61.0,
+          -1
+        ],
+        "hi": [
+          3,
+          61.0,
+          2.4
+        ],
+        "max_deg": 90.0,
+        "why": "the web between the branches is solid until the skins part by 2 x splitter_groove_radius (splitter half width >= wall + groove at z = 0.00 mm), then the shell rounds it"
+      },
+      {
+        "gate": "solid_regions",
+        "name": "shared collar wall between adjacent cards",
+        "lo": [
+          -2.2700000000000005,
+          -61.0,
+          -1
+        ],
+        "hi": [
+          2.2700000000000005,
+          61.0,
+          75.0
+        ],
+        "max_deg": 90.0,
+        "why": "at the 40.64 mm (2-slot) pitch the bores are pitch - bore = 2.14 mm apart: the splitter web never parts into two skins and the two inner collar walls are one 2.14 mm wall between the cards (about five 0.4 mm lines), solid from the fan face to the collar top, with its T-junctions into the outer walls"
+      },
+      {
+        "gate": "solid_regions",
+        "name": "seat corner fill",
+        "lo": [
+          -40.870000000000005,
+          17.599999999999998,
+          58.5
+        ],
+        "hi": [
+          -33.47,
+          27.3,
+          62.0
+        ],
+        "max_deg": 90.0,
+        "why": "the seat closes between the rounded passage corner (r 6.0 mm at the seat) and the square bore/collar, and up to the plug-pocket floor (y 27.2), undercut at return_ramp_slope: ~30 mm3 per card, up to 2.7 mm wide, within 3.5 mm of the seat"
+      },
+      {
+        "gate": "solid_regions",
+        "name": "seat corner fill",
+        "lo": [
+          -0.22999999999999968,
+          17.599999999999998,
+          58.5
+        ],
+        "hi": [
+          7.17,
+          27.3,
+          62.0
+        ],
+        "max_deg": 90.0,
+        "why": "the seat closes between the rounded passage corner (r 6.0 mm at the seat) and the square bore/collar, and up to the plug-pocket floor (y 27.2), undercut at return_ramp_slope: ~30 mm3 per card, up to 2.7 mm wide, within 3.5 mm of the seat"
+      },
+      {
+        "gate": "solid_regions",
+        "name": "seat seal beside the latch wall",
+        "lo": [
+          -26.370000000000005,
+          24.799999999999997,
+          56.95294117647059
+        ],
+        "hi": [
+          -18.869999999999997,
+          49.35,
+          62.0
+        ],
+        "max_deg": 90.0,
+        "why": "the card face between the housing clearance (x -5.95) and the rounded bay wall is over the fin stack, so the seat covers it (seat_coverage); it is a 3.1 mm cantilever from the bay-wall shell, grown from it at return_ramp_slope (4.0 mm deep at the shell): a thinner sloped skin would enclose a cavity under the seat for about the same material"
+      },
+      {
+        "gate": "solid_regions",
+        "name": "seat seal beside the latch wall",
+        "lo": [
+          14.27,
+          24.799999999999997,
+          56.95294117647059
+        ],
+        "hi": [
+          21.770000000000003,
+          49.35,
+          62.0
+        ],
+        "max_deg": 90.0,
+        "why": "the card face between the housing clearance (x -5.95) and the rounded bay wall is over the fin stack, so the seat covers it (seat_coverage); it is a 3.1 mm cantilever from the bay-wall shell, grown from it at return_ramp_slope (4.0 mm deep at the shell): a thinner sloped skin would enclose a cavity under the seat for about the same material"
+      }
+    ]
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "export_simplification_tolerance_mm": 0.01,
+  "watertight": true,
+  "one_connected_solid": true,
+  "volume_mm3": 85039.6742639132,
+  "bounds_mm": [
+    [
+      -60.0,
+      -60.0,
+      0.0
+    ],
+    [
+      60.0,
+      60.0,
+      82.0
+    ]
+  ],
+  "fan_plate_mm": [
+    120.0,
+    120.0,
+    2.4
+  ],
+  "inlet_diameter_mm": 116.8,
+  "collar_wall_mm": 1.6,
+  "shell_wall_mm": 1.6,
+  "wall_method": "Verified 1.6 mm outer skin with localized 6-8 mm internal corner fillets; connector-service trims locally reduce thickness",
+  "GPU_opening_mm": [
+    38.5,
+    98.5
+  ],
+  "plug_latch_sweep_collisions_mm3": [
+    0.0,
+    0.0
+  ],
+  "connector_bay_collisions_mm3": [
+    1.355668510782948e-08,
+    1.9774005988182353e-08
+  ],
+  "integral_return_top_depth_mm": 3.2,
+  "return_underside_ramp_start_mm": 62.0,
+  "connector_access": "Open outer/top rims; lower and inner returns retained",
+  "housing_clearance_mm": [
+    13.6,
+    20.6
+  ],
+  "local_latch_aperture_mm": [
+    3.6,
+    8.6
+  ],
+  "physical_fit_tested": false,
+  "CFD_validation": "Separate study; CAD export does not certify performance",
+  "chamber_length_mm": 70.0,
+  "transition_end_mm": 70.0,
+  "shoulder_rounding_max_mm": 10.0,
+  "shoulder_rounding_at_service_end_mm": 7.0,
+  "passage_wall_fillet_max_mm": 8.0,
+  "passage_wall_fillet_at_GPU_mm": 6.0,
+  "connector_service_policy": "Contoured pocket around explicit straight plug/latch insertion sweep; oversized rectangular service trim removed",
+  "shoulder_axial_easing_fraction": 0.06,
+  "pocket_transition_end_mm": 44.0,
+  "splitter_nose_front_width_mm": 0.4,
+  "splitter_nose_radii_mm": [
+    0.8,
+    1.6
+  ],
+  "splitter_profile": "symmetric cubic widening with elliptical nose",
+  "shoulder_axial_max_slope": 0.8099613152804642,
+  "upper_shoulder_requested_radius_mm": 6.0,
+  "shape": "upper shoulder blends plus broad 6-8 mm fillets at the marked passage-floor to side-wall creases; gentle pocket ramps; rounded central splitter",
+  "fan_front_to_GPU_face_mm": 95.0,
+  "serialized_fillet_checks": [
+    {
+      "z_mm": 44.0,
+      "side": 0,
+      "actual_STL_curve_error_mm": 0.0011742150003318697
+    },
+    {
+      "z_mm": 44.0,
+      "side": 1,
+      "actual_STL_curve_error_mm": 0.002352663766794535
+    },
+    {
+      "z_mm": 50.0,
+      "side": 0,
+      "actual_STL_curve_error_mm": 0.004170481761791745
+    },
+    {
+      "z_mm": 50.0,
+      "side": 1,
+      "actual_STL_curve_error_mm": 0.0031736619321450013
+    },
+    {
+      "z_mm": 60.0,
+      "side": 0,
+      "actual_STL_curve_error_mm": 0.002277670902053329
+    },
+    {
+      "z_mm": 60.0,
+      "side": 1,
+      "actual_STL_curve_error_mm": 0.0035902992452577563
+    },
+    {
+      "z_mm": 69.99,
+      "side": 0,
+      "actual_STL_curve_error_mm": 0.000996302074326849
+    },
+    {
+      "z_mm": 69.99,
+      "side": 1,
+      "actual_STL_curve_error_mm": 0.0009789380812775972
+    }
+  ],
+  "consistent_winding": true,
+  "connected_solids": 1,
+  "fan_face_uncovered_area_mm2": 4.969160257280302e-08,
+  "splitter_profile_measurements": [
+    {
+      "z_mm": 0.0001,
+      "expected_half_width_mm": 0.20019354932787356,
+      "measured_x_bounds_mm": [
+        -0.20016063004732132,
+        0.20016081631183624
+      ],
+      "error_mm": 3.291928055224047e-05
+    },
+    {
+      "z_mm": 0.14,
+      "expected_half_width_mm": 0.3789963877828959,
+      "measured_x_bounds_mm": [
+        -0.3784906268119812,
+        0.37857921177971415
+      ],
+      "error_mm": 0.0005057609709147037
+    },
+    {
+      "z_mm": 0.28,
+      "expected_half_width_mm": 0.48762050896123765,
+      "measured_x_bounds_mm": [
+        -0.48545270413160324,
+        0.4862172896538619
+      ],
+      "error_mm": 0.002167804829634412
+    },
+    {
+      "z_mm": 0.5,
+      "expected_half_width_mm": 0.6055742026952523,
+      "measured_x_bounds_mm": [
+        -0.6026278212666512,
+        0.6026327368817564
+      ],
+      "error_mm": 0.0029463814286011525
+    },
+    {
+      "z_mm": 1.0,
+      "expected_half_width_mm": 0.7577213773503793,
+      "measured_x_bounds_mm": [
+        -0.7574074566364288,
+        0.7610062453827824
+      ],
+      "error_mm": 0.003284868032403132
+    },
+    {
+      "z_mm": 1.5,
+      "expected_half_width_mm": 0.8137843900520142,
+      "measured_x_bounds_mm": [
+        -0.8083327252474182,
+        0.8128625143208027
+      ],
+      "error_mm": 0.005451664804596024
+    },
+    {
+      "z_mm": 2.0,
+      "expected_half_width_mm": 0.8250563265306123,
+      "measured_x_bounds_mm": [
+        -0.8257656395435333,
+        0.8276448762040777
+      ],
+      "error_mm": 0.0025885496734653346
+    },
+    {
+      "z_mm": 5.0,
+      "expected_half_width_mm": 0.9520408163265306,
+      "measured_x_bounds_mm": [
+        -0.9527136981487274,
+        0.9544452238473902
+      ],
+      "error_mm": 0.002404407520859575
+    },
+    {
+      "z_mm": 10.0,
+      "expected_half_width_mm": 1.3777551020408163,
+      "measured_x_bounds_mm": [
+        -1.3798112943768501,
+        1.37861197246207
+      ],
+      "error_mm": 0.002056192336033824
+    },
+    {
+      "z_mm": 20.0,
+      "expected_half_width_mm": 2.8677551020408165,
+      "measured_x_bounds_mm": [
+        -2.869243413209915,
+        2.8681881989593454
+      ],
+      "error_mm": 0.001488311169098644
+    },
+    {
+      "z_mm": 30.0,
+      "expected_half_width_mm": 4.905102040816326,
+      "measured_x_bounds_mm": [
+        -4.907052865906843,
+        4.905967520558498
+      ],
+      "error_mm": 0.0019508250905175828
+    },
+    {
+      "z_mm": 40.0,
+      "expected_half_width_mm": 7.124897959183673,
+      "measured_x_bounds_mm": [
+        -7.116297297179699,
+        7.121657536382823
+      ],
+      "error_mm": 0.008600662003973802
+    },
+    {
+      "z_mm": 50.0,
+      "expected_half_width_mm": 9.162244897959184,
+      "measured_x_bounds_mm": [
+        -9.159872315824032,
+        9.159807427592114
+      ],
+      "error_mm": 0.0024374703670702047
+    },
+    {
+      "z_mm": 54.99,
+      "expected_half_width_mm": 9.996963818836328,
+      "measured_x_bounds_mm": [
+        -9.995428681373596,
+        9.996015684374278
+      ],
+      "error_mm": 0.001535137462731484
+    },
+    {
+      "z_mm": 60.0,
+      "expected_half_width_mm": 10.652244897959184,
+      "measured_x_bounds_mm": [
+        -10.6513756737113,
+        10.65188571161871
+      ],
+      "error_mm": 0.0008692242478840484
+    },
+    {
+      "z_mm": 69.99,
+      "expected_half_width_mm": 11.229999361489387,
+      "measured_x_bounds_mm": [
+        -11.227564044296741,
+        11.229322611772574
+      ],
+      "error_mm": 0.0024353171926456696
+    }
+  ],
+  "collar_section_difference_from_cad_mm": 0.006849134623256982,
+  "stl_sha256": "a008fb6a51b0b5c08772f8ed9ae6cd8836e1c55f1c2ccb503c925fda13d13c7a",
+  "total_estimated_port_obstruction_mm2": 149.37290915996203,
+  "passage_fillet_min_radius_service_region_mm": 6.0,
+  "layer_audit": {
+    "layer_height_mm": 0.28,
+    "overhang_horizontal_allowance_mm": 0.28,
+    "maximum_beyond_45deg_area_mm2": 2.464340571968366,
+    "layers_beyond_45deg": [
+      {
+        "z": 6.0200000000000005,
+        "beyond_45deg_area_mm2": 0.10860685159404661,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 6.300000000000001,
+        "beyond_45deg_area_mm2": 0.11898400327202842,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 6.580000000000001,
+        "beyond_45deg_area_mm2": 0.1173223534877145,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 6.86,
+        "beyond_45deg_area_mm2": 0.11865032277559426,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 7.140000000000001,
+        "beyond_45deg_area_mm2": 0.19047047458538732,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 7.420000000000001,
+        "beyond_45deg_area_mm2": 0.11521389664297897,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 7.700000000000001,
+        "beyond_45deg_area_mm2": 0.24817404588875988,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 8.260000000000002,
+        "beyond_45deg_area_mm2": 0.11048344511880967,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 35.7,
+        "beyond_45deg_area_mm2": 0.15525642559839803,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 52.220000000000006,
+        "beyond_45deg_area_mm2": 0.10391820283394795,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 64.26,
+        "beyond_45deg_area_mm2": 0.15399904673333725,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 64.54,
+        "beyond_45deg_area_mm2": 2.464340571968366,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 64.82000000000001,
+        "beyond_45deg_area_mm2": 1.7014180204609957,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 65.10000000000001,
+        "beyond_45deg_area_mm2": 1.6691241895707802,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 65.38000000000001,
+        "beyond_45deg_area_mm2": 1.4914197226675463,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 65.66000000000001,
+        "beyond_45deg_area_mm2": 1.415767716173617,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 65.94000000000001,
+        "beyond_45deg_area_mm2": 1.20671442951489,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 66.22000000000001,
+        "beyond_45deg_area_mm2": 1.096501147666766,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 66.5,
+        "beyond_45deg_area_mm2": 0.7067803558549315,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 66.78,
+        "beyond_45deg_area_mm2": 0.3868099849373601,
+        "floating_islands_mm2": []
+      },
+      {
+        "z": 67.06,
+        "beyond_45deg_area_mm2": 0.21239004336254835,
+        "floating_islands_mm2": []
+      }
+    ],
+    "floating_layers": [],
+    "note": "Geometric layer overlap screen, not a physical print test. Small bridge spans may print without supports; material, cooling and speed matter."
+  },
+  "CFD_status": "Controlled 0/3/6/9 mm upper-shoulder radius screening is running; no optimality claim."
+}

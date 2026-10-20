@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+build/
+
+# Harness
+runs/
+fixtures/*.tgz
+
+# The pre-restructure lab notebook and released-files folder: kept locally, not part of the repository.
+work/
+outputs/
+
+# Claude Code (agent worktrees, local settings)
+.claude/

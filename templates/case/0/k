@@ -1,0 +1,10 @@
+FoamFile {version 2.0; format ascii; class volScalarField; object k;}
+dimensions [0 2 -2 0 0 0 0]; internalField uniform .01;
+boundaryField
+{
+ inlet $inletK
+ $outletPatch {type inletOutlet; inletValue uniform .01; value uniform .01;}
+ walls {type kqRWallFunction; value uniform 1e-6;}
+ cardWalls {type zeroGradient;}
+ background {type zeroGradient;}
+}

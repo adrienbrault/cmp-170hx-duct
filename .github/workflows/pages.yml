@@ -1,0 +1,36 @@
+# Publish releases/ (the index, the interactive 3-D previews, STLs and notes) to GitHub Pages.
+# The previews and STLs are Git LFS files, so the checkout fetches LFS; a branch-based Pages
+# deploy would serve the LFS pointer files instead. Runs only when releases/ changes.
+name: Pages
+
+on:
+  push:
+    branches: [main]
+    paths: ['releases/**', '.github/workflows/pages.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: releases
+      - id: deployment
+        uses: actions/deploy-pages@v4

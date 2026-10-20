@@ -1,0 +1,42 @@
+FoamFile {version 2.0; format ascii; class dictionary; object snappyHexMeshDict;}
+castellatedMesh true; snap true; addLayers true;
+geometry
+{
+$refinementBoxes
+ flow.stl {type triSurfaceMesh; name fluid;
+ regions {$surfaceRegions}
+ }
+}
+castellatedMeshControls
+{
+ maxLocalCells 1200000; maxGlobalCells 1600000; minRefinementCells 0; maxLoadUnbalance .1; nCellsBetweenLevels 3;
+ features (); resolveFeatureAngle 30;
+ refinementSurfaces
+ {
+ fluid {level (1 1); patchInfo {type wall;}
+ regions {$patchRegions}
+ }
+ }
+ refinementRegions {$refinementRegions};
+ locationInMesh $locationInMesh;
+ allowFreeStandingZoneFaces true;
+}
+snapControls {nSmoothPatch 3; tolerance 2; nSolveIter 50; nRelaxIter 8; nFeatureSnapIter 10; implicitFeatureSnap true; explicitFeatureSnap false; multiRegionFeatureSnap true;}
+addLayersControls
+{
+ relativeSizes true;
+ layers {".*walls" {nSurfaceLayers 3;}}
+ expansionRatio 1.2; finalLayerThickness .3; minThickness .08;
+ nGrow 0; featureAngle 60; slipFeatureAngle 30;
+ nRelaxIter 5; nSmoothSurfaceNormals 1; nSmoothNormals 3; nSmoothThickness 10;
+ maxFaceThicknessRatio .5; maxThicknessToMedialRatio .3; minMedialAxisAngle 90;
+ nBufferCellsNoExtrude 0; nLayerIter 40;
+}
+meshQualityControls
+{
+ maxNonOrtho 65; maxBoundarySkewness 4; maxInternalSkewness 4; maxConcave 80;
+ minVol 1e-15; minTetQuality 1e-30; minArea -1; minTwist .02; minDeterminant .001;
+ minFaceWeight .02; minVolRatio .01; minTriangleTwist -1; nSmoothScale 4; errorReduction .75;
+ relaxed {maxNonOrtho 75;}
+}
+mergeTolerance 1e-6;

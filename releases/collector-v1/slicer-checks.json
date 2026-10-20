@@ -1,0 +1,20 @@
+{
+  "automatic_supports": {
+    "minutes": 117.08671875,
+    "grams": 50.492496490478516,
+    "triangle_count": 45448,
+    "warning": ""
+  },
+  "no_supports_trial": {
+    "minutes": 108.572900390625,
+    "grams": 48.414039611816406,
+    "triangle_count": 45448,
+    "warning": ""
+  },
+  "fit_gauge": {
+    "minutes": 18.653401692708332,
+    "grams": 3.214728593826294,
+    "triangle_count": 11400,
+    "warning": ""
+  }
+}

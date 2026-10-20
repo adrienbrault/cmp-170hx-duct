@@ -1,0 +1,141 @@
+{
+  "case": "CASE_FRACTAL (photo estimates)",
+  "collector": "COLLECTOR_V4A_SNAP for V29 (5-slot)",
+  "stl": "fractal-plug-fit-gauge.stl",
+  "sha256": "f498807ece150b80e32e55ac5688e39cece24c5fa8f36ca09456d6a8019c294c",
+  "bounds_mm": [
+    [
+      -53.12,
+      -54.35,
+      0.0
+    ],
+    [
+      54.56,
+      69.65,
+      7.61
+    ]
+  ],
+  "volume_mm3": 6260.9,
+  "watertight": true,
+  "bodies": 1,
+  "gauge": {
+    "clearance": 0.5,
+    "plate": 1.4,
+    "deboss": 0.56,
+    "cap": 7.0,
+    "ab_cap": 3.5,
+    "corner": 2.0,
+    "tongue": [
+      1.6,
+      16.0
+    ],
+    "hook": 2.4,
+    "bridge": 4.0,
+    "bridge_overlap": 1.5,
+    "catch_deg": 40.0,
+    "hook_gap": 0.3
+  },
+  "print_orientation": "outer face on the bed, hooks up (the part turned 180 deg about x)",
+  "edge_margin": 0.5,
+  "corner": 1.5,
+  "facts": {
+    "recess_mm": {
+      "width": 142.0,
+      "height": 125.0,
+      "depth": 8.0,
+      "corner_r": 4.0
+    },
+    "plug_clearance_top_bottom": 0.5,
+    "plug_edge_margin_to_outer_slots": 0.5,
+    "outline_bounds": [
+      -53.12,
+      -69.65,
+      54.55,
+      54.35
+    ],
+    "divider_x": [
+      -50.08,
+      -29.76,
+      -9.44,
+      10.88,
+      31.2,
+      51.52
+    ],
+    "mouths": [
+      [
+        -50.08,
+        -9.44,
+        -63.15,
+        52.85
+      ],
+      [
+        10.88,
+        51.52,
+        -63.15,
+        52.85
+      ]
+    ],
+    "card_windows": [
+      [
+        -42.98,
+        -17.98,
+        -36.65,
+        44.35
+      ],
+      [
+        17.98,
+        42.98,
+        -36.65,
+        44.35
+      ]
+    ],
+    "snap_arms": [
+      {
+        "card": "A",
+        "y": -14.15,
+        "window_edge_x": -42.98
+      },
+      {
+        "card": "A",
+        "y": 25.85,
+        "window_edge_x": -42.98
+      },
+      {
+        "card": "B",
+        "y": -14.15,
+        "window_edge_x": 42.98
+      },
+      {
+        "card": "B",
+        "y": 25.85,
+        "window_edge_x": 42.98
+      }
+    ],
+    "pads_x": [
+      [
+        -53.12,
+        -50.08
+      ],
+      [
+        -9.44,
+        10.88
+      ],
+      [
+        51.52,
+        54.55
+      ]
+    ],
+    "plate_area_mm2": 3927.7
+  },
+  "printability": {
+    "passed": true,
+    "summary": "unsupported_overhang pass, solid_regions pass, seal pass, seat_coverage pass, slicer_support pass"
+  },
+  "slicer": {
+    "profile": "profiles/slicer/process-028.json (0.28 mm layers), no supports",
+    "total_minutes": 25.5,
+    "machine_start_minutes": 7.0,
+    "print_minutes": 18.5,
+    "grams": 7.6
+  }
+}
