@@ -37,6 +37,8 @@ RELEASE_PAGES = {
     "a29": {"preview.html": "a29-pp-plug", "preview-flat.html": "a29-pp-v4a"},
     "v30": {"preview.html": "v30-pp-plug", "preview-flat.html": "v30-pp-v3"},
     "a30": {"preview.html": "a30-pp-plug", "preview-flat.html": "a30-pp-v4a"},
+    "v31": {"preview.html": "v30-pp-plug", "preview-flat.html": "v30-pp-v3"},   # V31/A31: the V30/A30 air passage, thicker collars outside it
+    "a31": {"preview.html": "a30-pp-plug", "preview-flat.html": "a30-pp-v4a"},
 }
 
 

@@ -2,7 +2,7 @@
 
 3D-printable ducting that cools two passively cooled NVIDIA CMP 170HX cards with one 120 mm fan (ARCTIC P12 Pro PST CO). A push duct on the cards' front ends feeds both cards; optional exhaust collectors on the rear slot brackets add a second, pulling fan. Everything is parametric Python (manifold3d + shapely), checked for printability before release, and screened with OpenFOAM CFD.
 
-**Status: experimental.** The A30 duct is printed and in use in the author's machine (and an early revision before it). V30 has not been printed yet. **No exhaust collector (flat rear panel or Fractal plug) has ever been printed or fitted**: their fit, seal and airflow gain are model results only. The CFD and thermal models are uncalibrated: treat every flow and temperature number here as a model result for comparing designs, not a GPU temperature prediction.
+**Status: experimental.** The A30 duct is printed and in use in the author's machine (and an early revision before it); its collar broke at the skin bend, which A31 fixes. A31, V30 and V31 have not been printed yet. **No exhaust collector (flat rear panel or Fractal plug) has ever been printed or fitted**: their fit, seal and airflow gain are model results only. The CFD and thermal models are uncalibrated: treat every flow and temperature number here as a model result for comparing designs, not a GPU temperature prediction.
 
 <p align="center">
   <img src="docs/images/v30-card-end.png" width="32%" alt="V30 push duct seen from the card end: two collars over the card ends, the passages narrowing from the fan plate">
@@ -19,14 +19,14 @@
 
 | Part | Folder | Notes |
 |---|---|---|
-| **V30** push duct, cards one slot apart (3-slot pitch, 60.96 mm) | [`releases/v30/`](releases/v30/) | P1S / 0.28 mm PETG: ~156 min, 72 g, no supports |
-| **A30** push duct, adjacent cards (2-slot pitch, 40.64 mm) | [`releases/a30/`](releases/a30/) | ~146 min, 68 g, no supports |
+| **V31** push duct, cards one slot apart (3-slot pitch, 60.96 mm) | [`releases/v31/`](releases/v31/) | P1S / 0.28 mm PETG: ~172 min, 83 g, no supports |
+| **A31** push duct, adjacent cards (2-slot pitch, 40.64 mm) | [`releases/a31/`](releases/a31/) | ~156 min, 75 g, no supports |
 | Exhaust collector for a flat rear panel (4-slot / 5-slot): **untested, never printed or fitted** | [`releases/collector-v4-4slot/`](releases/collector-v4-4slot/), [`collector-v4-5slot/`](releases/collector-v4-5slot/) | second 120 mm fan, pulling |
 | Fit gauge for a recessed slot bay (Fractal) | [`releases/fractal-fit-gauge/`](releases/fractal-fit-gauge/) | prints in ~26 min; the plug collector it checks is an **untested draft** |
 
-Each duct folder has the STL, a 10 mm fit-check ring (print it first), `PRINT-NOTES.md`, `checks.json` and the slicer results. Older releases (V23-V29, collectors v1-v3) are kept for reference and as regression fixtures.
+Each duct folder has the STL, a 10 mm fit-check ring (print it first), `PRINT-NOTES.md`, `checks.json` and the slicer results. Older releases (V23-V30, A29-A30, collectors v1-v3) are kept for reference and as regression fixtures.
 
-V30 and A30 are V29 / A29 with an ogive fairing behind the fan's motor hub; it is sized for the P12 Pro's ~52 mm rear hub face. Print fan face down, without supports. Do not scale an STL to adjust the fit: that changes the card pitch and the fan hole spacing. Change the parameters and rebuild instead.
+V31 and A31 are V30 / A30 with 2.4 mm collars (the printed A30's 1.2 mm collar broke off at the skin bend) and the latch-notch wall moved 1 mm toward the plug (it left part of the card's fin tunnel open, which leaked). Pull the duct off before unplugging: the latch can no longer swing open inside the notch. V30 and A30 are V29 / A29 with an ogive fairing behind the fan's motor hub, sized for the P12 Pro's ~52 mm rear hub face. Print fan face down, without supports. Do not scale an STL to adjust the fit: that changes the card pitch and the fan hole spacing. Change the parameters and rebuild instead.
 
 ## Using the code
 
