@@ -24,6 +24,8 @@ class GeometryParams:
     bore: tuple[float, float] = (38.5, 98.5)
     collar_length: float = 12.0
     collar_wall: float = 1.6
+    collar_reinforce: float = 0.0        # extra collar thickness outward (shell_from_air), with a chamfered foot over the skin bend
+    collar_reinforce_depth: float = 6.0  # the band's foot starts this far under the seat (z = chamber_length - depth)
     lead_in_z: tuple[float, float] = (11.4, 12.05)        # above the seat face
     lead_in_bore: tuple[float, float] = (38.9, 98.9)      # bore at lead_in_z[1]
     power_notch: tuple[float, float] = (-3.25, 26.5)      # notch inner x (from card centre), lower y
@@ -158,6 +160,14 @@ A29 = replace(V29, pitch=40.64)
 # against a measured ~52 mm rear hub face: the rim lands 0.75 mm inside its edge). See docs/push-aero-plan.md for the CFD matrix.
 V30 = replace(V29, hub_fairing=1.0)
 A30 = replace(A29, hub_fairing=1.0)
+# A printed A30 broke along the layer line where the 1.2 mm skin bends into the collar (fan face down: that bend is one
+# layer plane). V31/A31 thicken the collars outward to 2.4 mm (six 0.4 mm lines) with a 34 deg foot that fills the bend.
+# The latch notch's wall moves 1 mm toward the plug (to 1.2 mm from the housing clearance): it left the card's fin tunnel
+# (from 5.4 mm off the card centre) open beside the lever and leaked. The resting lever pad (0.4 mm proud) keeps 0.5 mm;
+# the hook's 1.2 mm unlatch swing no longer fits, so the duct comes off before the plug.
+V31_LATCH = dict(latch=(-6.25, 34.2, 0.6, 6.6), latch_clear=(-6.55, 33.9, 1.2, 7.2))
+V31 = replace(V30, collar_reinforce=1.2, **V31_LATCH)
+A31 = replace(A30, collar_reinforce=1.2, **V31_LATCH)
 
 
 def _coerce(name: str, value):
@@ -168,7 +178,7 @@ def _coerce(name: str, value):
     return floats(value)
 
 
-PRESETS = {"v23": V23, "v24": V24, "v25": V25, "v27": V27, "v28": V28, "v29": V29, "a29": A29, "v30": V30, "a30": A30}
+PRESETS = {"v23": V23, "v24": V24, "v25": V25, "v27": V27, "v28": V28, "v29": V29, "a29": A29, "v30": V30, "a30": A30, "v31": V31, "a31": A31}
 
 
 def from_toml(data: dict, base: GeometryParams = V23) -> GeometryParams:

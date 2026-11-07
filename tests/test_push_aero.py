@@ -25,6 +25,15 @@ def test_v30_a30_are_v29_a29_with_the_fairing():
     assert PRESETS['v30'] == replace(V29, hub_fairing=1.0) and PRESETS['a30'] == replace(A29, hub_fairing=1.0)
 
 
+def test_v31_a31_change_only_the_collars_and_latch_wall():
+    """Same air passage as V30/A30: thicker collars outside it, the latch notch's far wall 1 mm closer to the plug."""
+    for new, old in (('v31', 'v30'), ('a31', 'a30')):
+        g, g0 = PRESETS[new], PRESETS[old]
+        assert g == replace(g0, collar_reinforce=1.2, latch=g.latch, latch_clear=g.latch_clear)
+        assert g.latch_clear[0]+g.latch_clear[2] == pytest.approx(g0.latch_clear[0]+g0.latch_clear[2]-1.0)
+        assert g.latch_clear[0]+g.latch_clear[2]-(g.latch[0]+g.latch[2]) == pytest.approx(.3)   # clearance kept
+
+
 def _radius(solid, z):
     """Largest radius of the section at z (0 if empty)."""
     pts = [np.asarray(p) for p in solid.slice(float(z)).to_polygons()]

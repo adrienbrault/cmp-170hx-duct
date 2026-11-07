@@ -618,6 +618,13 @@ def duct_spec(g) -> PartSpec:
                               f'at the {g.pitch} mm (2-slot) pitch the bores are pitch - bore = {sw:.2f} mm apart: the splitter web never parts '
                               f'into two skins and the two inner collar walls are one {sw:.2f} mm wall between the cards (about five 0.4 mm lines), '
                               f'solid from the fan face to the collar top, with its T-junctions into the outer walls'))
+    if getattr(g, 'collar_reinforce', 0):
+        e = g.collar_reinforce; ow = g.collar_wall+e+.5; bw2, bh2 = g.bore[0]/2, g.bore[1]/2
+        for cx in g.card_x:
+            solids.append(Allowed('reinforced collar', (cx-bw2-ow, -bh2-ow, L-g.collar_reinforce_depth-.5), (cx+bw2+ow, bh2+ow, top+1),
+                                  f'the collar is {g.collar_wall+e:.1f} mm (six 0.4 mm lines) from {g.collar_reinforce_depth} mm under the seat '
+                                  f'to the card end, and fills the outside of the skin\'s bend into it: a printed 1.2 mm collar broke there '
+                                  f'along a layer line'))
     overhang = []
     w = g.wall_dilation   # each return fuses with the adjoining shell wall: its box extends one wall into it
     bhw = g.bore[0]/2; r_seat = g.passage_radius-g.passage_radius_drop

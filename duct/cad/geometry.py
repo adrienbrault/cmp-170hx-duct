@@ -606,6 +606,26 @@ def build_duct(g: GeometryParams) -> DuctSolids:
             collars.append(mf.Manifold.extrude(bridge, cl+.4).translate([0, 0, L-.4]))
     if g.flange_fillet: outer = union(outer, _flange_fillet(g, outer))
     body = outer-inner
+    if g.collar_reinforce:
+        # A printed A30's collar broke off along the layer line where the 1.2 mm skin bends into it. Thicken each collar
+        # outward by collar_reinforce from collar_reinforce_depth under the seat: the band's foot grows from the bore edge at
+        # 1.5 mm of height per mm (34 deg from vertical, no flat ledge where no skin is under it) and its outer face is
+        # vertical, so it fills the outside of that bend. It stays within the shell's outline at z0 grown upward at the same
+        # 34 deg, so every part of it stands on skin (beside the plug pockets the skin runs inside the collar line).
+        e, z0 = g.collar_reinforce, L-g.collar_reinforce_depth; h = 1.5*(cw+e)
+        pts = []
+        for cx in g.card_x:
+            bore_cs = mf.CrossSection.square([bw, bh]).translate([cx-hw, -hh])
+            ring = lambda o: np.asarray(bore_cs.offset(o, mf.JoinType.Round, circular_segments=64).to_polygons()[0])  # noqa: E731
+            band = mf.Manifold.hull_points(np.vstack([np.c_[ring(0.), np.full(len(ring(0.)), z0)],
+                                                      *[np.c_[ring(cw+e), np.full(len(ring(cw+e)), z)] for z in (z0+h, L+cl)]]))
+            # (it stops 2.5 mm short of the power notch: under the notch the skin turns into the plug-pocket floor)
+            band -= cube([bw, bh, cl+L], [cx-hw, -hh, 0])+cube([100, 100, L+cl+1], [cx+g.power_notch[0]-100, g.power_notch[1]-2.5, -.5])
+            pts.append(band)
+        H = L+cl-z0+1
+        footprint = mf.Manifold.extrude(outer.slice(z0), .01).translate([0, 0, z0]).minkowski_sum(
+            mf.Manifold.cylinder(H, 0., H/1.5, 32))
+        body = union(body, (union(*pts)^footprint)-inner)
     fan_flange = plate(P, P, g.fan_plate_corner_radius, 0, ft)-cylinder(R, ft+.2, -.1)
     for x in [-g.fan_hole_offset, g.fan_hole_offset]:
         for y in [-g.fan_hole_offset, g.fan_hole_offset]:
